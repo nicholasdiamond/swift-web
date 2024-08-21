@@ -13,24 +13,24 @@ export default function Navbar() {
       <div className="navTopSection bg-nav-background p-3 pr-16">
         <div className="flex pr-2.5 gap-2 justify-end">
           <img src={navLogo3} alt="nav logo" className="w-9 h-6 pr-0 mr-0" />
-          <p className="w-2.5 h-2.5 pt-1.5 pr-6 pl-0 ml-0 text-arrow-down">
+          <p className="w-2.5 h-2.5 pt-1.5 pr-6 pl-0 ml-0 text-arrow-down cursor-pointer">
             <TiArrowSortedDown />
           </p>
           <div className="pt-1 flex gap-1.5">
             <img
               src={navLogo4}
               alt="nav logo"
-              className="shadow-nav-shadow w-5 h-5 p-px rounded-s-full rounded-e-full"
+              className="shadow-nav-shadow w-5 h-5 p-px rounded-s-full rounded-e-full cursor-pointer"
             />
             <img
               src={navLogo5}
               alt="nav logo"
-              className="shadow-nav-shadow w-5 h-5 p-px rounded-s-full rounded-e-full"
+              className="shadow-nav-shadow w-5 h-5 p-px rounded-s-full rounded-e-full cursor-pointer"
             />
             <img
               src={navLogo2}
               alt="nav logo"
-              className="shadow-nav-shadow w-5 h-5 p-px rounded-s-full rounded-e-full"
+              className="shadow-nav-shadow w-5 h-5 p-px rounded-s-full rounded-e-full cursor-pointer"
             />
           </div>
         </div>
