@@ -13,6 +13,12 @@ import currency from "../../assets/currency.png";
 import deposit from "../../assets/deposit.png";
 import transfer from "../../assets/transfer.png";
 import fast from "../../assets/bolt.png";
+import scan1 from "../../assets/scan1.png";
+import scanner from "../../assets/code_scanner.png";
+import download2 from "../../assets/download2.png";
+import download from "../../assets/download.png";
+import register3 from "../../assets/register3.png";
+import register from "../../assets/register.png";
 import Card from "react-bootstrap/Card";
 import { IoMdCheckmark } from "react-icons/io";
 
@@ -36,7 +42,7 @@ export default function WelcomeDashboard() {
           <div className="flex mb-8 gap-3 flex-wrap max-w-8xl">
             <Card className="w-64 border shadow-card-shadow">
               <Card.Body className="bg-active h-4/5 center">
-                <img src={fast} alt="" className="p-8" />
+                <img src={fast} alt="fast" className="p-8" />
               </Card.Body>
               <Card.Body>
                 <Card.Title className="bold">Fast</Card.Title>
@@ -52,7 +58,7 @@ export default function WelcomeDashboard() {
             </Card>
             <Card className="w-64 border shadow-card-shadow">
               <Card.Body className="bg-active h-4/5 center">
-                <img src={reliable} alt="" className="p-8" />
+                <img src={reliable} alt="reliable" className="p-8" />
               </Card.Body>
               <Card.Body>
                 <Card.Title className="bold">Reliable</Card.Title>
@@ -68,7 +74,7 @@ export default function WelcomeDashboard() {
             </Card>
             <Card className="w-64 border shadow-card-shadow">
               <Card.Body className="bg-active h-4/5 center">
-                <img src={efficient} alt="" className="p-8" />
+                <img src={efficient} alt="efficient" className="p-8" />
               </Card.Body>
               <Card.Body>
                 <Card.Title className="bold">Efficient</Card.Title>
@@ -84,7 +90,7 @@ export default function WelcomeDashboard() {
             </Card>
             <Card className="w-64 border shadow-card-shadow">
               <Card.Body className="bg-active h-4/5 center">
-                <img src={reward} alt="" className="p-8" />
+                <img src={reward} alt="reward" className="p-8" />
               </Card.Body>
               <Card.Body>
                 <Card.Title className="bold">Reward</Card.Title>
@@ -100,7 +106,7 @@ export default function WelcomeDashboard() {
             </Card>
             <Card className="w-64 border shadow-card-shadow">
               <Card.Body className="bg-active h-4/5 center">
-                <img src={seamless} alt="" className="p-8" />
+                <img src={seamless} alt="seamless" className="p-8" />
               </Card.Body>
               <Card.Body>
                 <Card.Title className="bold">Seamless</Card.Title>
@@ -116,7 +122,7 @@ export default function WelcomeDashboard() {
             </Card>
             <Card className="w-64 border shadow-card-shadow">
               <Card.Body className="bg-active h-4/5 center">
-                <img src={integration} alt="" className="p-8" />
+                <img src={integration} alt="integration" className="p-8" />
               </Card.Body>
               <Card.Body>
                 <Card.Title className="bold">Integrations</Card.Title>
@@ -136,6 +142,7 @@ export default function WelcomeDashboard() {
           <img src={breakOut} alt="breakOut" className="h-3/5 w-11/12" />
         </div>
       </div>
+
       <div className="max-w-6xl m-auto pb-8">
         <div className="pt-20 pb-0">
           <img src={excitingOffer} alt="exciting offers" className="w-4/12" />
@@ -184,6 +191,62 @@ export default function WelcomeDashboard() {
               </Card.Text>
             </Card.Body>
           </Card>
+        </div>
+      </div>
+
+      <div className="bg-footer-texture h-4/5 p-20 mb-8 mt-20">
+        <div className="max-w-5xl m-auto text-center">
+          <h2 className="font-bold pb-5">
+            Three Steps to get onboarded with us
+          </h2>
+          <div className="flex gap-4 max-w-5xl m-auto">
+            <div className="stepsCard-shadow text-center p-2 w-96 bg-stepsCard-background  z-50">
+              <img src={scan1} alt="scanner" className="w-20 pl-2 pt-2" />
+              <img src={scanner} alt="scanner" className="w-48 pl-28 pb-3" />
+              <h2 className="font-bold">Scan</h2>
+              <p>
+                Get our mobile app on apple and google playstore by scanning
+                this barcode and start experiencing swift payments on all bills
+                and expenditures
+              </p>
+            </div>
+            <div className="stepsCard-shadow text-center p-2 w-96 bg-stepsCard-background  z-50">
+              <img src={download2} alt="download" className="w-20 pl-2 pt-2" />
+              <img src={download} alt="download" className="w-48 pl-28 pb-3" />
+              <h2 className="font-bold">Download</h2>
+              <p>
+                Install our mobile app on your device after scanning and you are
+                on flight for swift transactions
+              </p>
+            </div>
+            <div className="stepsCard-shadow text-center p-2 w-96 bg-stepsCard-background  z-50">
+              <img src={register3} alt="register" className="w-20 pl-2 pt-2" />
+              <img src={register} alt="register" className="w-48 pl-28 pb-3" />
+              <h2 className="font-bold">Register</h2>
+              <p>
+                Now we need to know you by filling our simple form for KYC to
+                ensure authenti- cations and security on how platform
+              </p>
+            </div>
+            {/* <div className="stepsCard-shadow text-center pt-0 w-72 bg-stepsCard-background h-72 z-50">
+              <img src={register3} alt="register" className="w-20 pl-2 pt-1" />
+              <img src={register} alt="register" className="w-48 pl-32" />
+              <h2 className="font-bold">Register</h2>
+              <p>
+                Now we need to know you by filling our simple form for KYC to
+                ensure authenti- cations and security on how platform
+              </p>
+            </div>
+            <div className="stepsCard-shadow text-center pt-0 w-72 bg-stepsCard-background h-72 z-50">
+              <img src={register3} alt="register" className="w-20 pl-2 pt-1" />
+              <img src={register} alt="register" className="w-48 pl-32" />
+              <h2 className="font-bold">Register</h2>
+              <p>
+                Now we need to know you by filling our simple form for KYC to
+                ensure authenti- cations and security on how platform
+              </p>
+            </div> */}
+          </div>
         </div>
       </div>
     </>
