@@ -19,6 +19,8 @@ import download2 from "../../assets/download2.png";
 import download from "../../assets/download.png";
 import register3 from "../../assets/register3.png";
 import register from "../../assets/register.png";
+import lock from "../../assets/shield_lock.png";
+import swiftP1 from "../../assets/swiftP1.png";
 import Card from "react-bootstrap/Card";
 import { IoMdCheckmark } from "react-icons/io";
 
@@ -228,25 +230,36 @@ export default function WelcomeDashboard() {
                 ensure authenti- cations and security on how platform
               </p>
             </div>
-            {/* <div className="stepsCard-shadow text-center pt-0 w-72 bg-stepsCard-background h-72 z-50">
-              <img src={register3} alt="register" className="w-20 pl-2 pt-1" />
-              <img src={register} alt="register" className="w-48 pl-32" />
-              <h2 className="font-bold">Register</h2>
-              <p>
-                Now we need to know you by filling our simple form for KYC to
-                ensure authenti- cations and security on how platform
-              </p>
-            </div>
-            <div className="stepsCard-shadow text-center pt-0 w-72 bg-stepsCard-background h-72 z-50">
-              <img src={register3} alt="register" className="w-20 pl-2 pt-1" />
-              <img src={register} alt="register" className="w-48 pl-32" />
-              <h2 className="font-bold">Register</h2>
-              <p>
-                Now we need to know you by filling our simple form for KYC to
-                ensure authenti- cations and security on how platform
-              </p>
-            </div> */}
           </div>
+        </div>
+      </div>
+
+      <div className="flex max-w-4xl m-auto pt-20 pl-10 pr-10 pb-20">
+        <div>
+          <p className="font-semibold text-2xl pb-5">
+            What we represent @Swiftpoint{" "}
+            <span className="text-red-700 "> ?</span>
+          </p>
+          <Card className="w-80 border h-5/6 shadow-privacy-shadow">
+            <Card.Body className="bg-active h-2/5 center">
+              <img src={lock} alt="fast" className="p-8 w-32" />
+            </Card.Body>
+            <Card.Body>
+              <Card.Title className="bold">Privacy</Card.Title>
+              <Card.Text className="border-bottom">
+                Our authentication process is built safely to secure your
+                account with us and ensure payouts request users consent before
+                transaction processing
+              </Card.Text>
+              <p className="flex justify-end font-bold pb-0">
+                SECURE{" "}
+                <IoMdCheckmark className="pl-1 text-2xl pb-1 text-active" />
+              </p>
+            </Card.Body>
+          </Card>
+        </div>
+        <div>
+          <img src={swiftP1} alt="swift point" className="w-96 top" />
         </div>
       </div>
     </>
