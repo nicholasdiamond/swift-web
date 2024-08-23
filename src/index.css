@@ -9,7 +9,7 @@
 
 .border {
   border: none !important;
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 
 .border-bottom {
@@ -19,11 +19,6 @@
 
 .bold {
   font-weight: bold !important;
-}
-
-.shadow {
-  box-shadow: 8px 0px 16px 0px #00000026;
-  height: 330px !important;
 }
 
 .center {
