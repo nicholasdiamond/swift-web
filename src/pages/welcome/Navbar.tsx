@@ -10,7 +10,7 @@ import { TiArrowSortedDown } from "react-icons/ti";
 export default function Navbar() {
   return (
     <>
-      <div className="navTopSection bg-nav-background p-3 pr-16">
+      <div className="navTopSection bg-nav-background p-1 pr-16">
         <div className="flex pr-2.5 gap-2 justify-end">
           <img src={navLogo3} alt="nav logo" className="w-9 h-6 pr-0 mr-0" />
           <p className="w-2.5 h-2.5 pt-1.5 pr-6 pl-0 ml-0 text-arrow-down cursor-pointer">
@@ -36,24 +36,26 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className="flex justify-between pr-24 font-medium">
-        <div className="align-center pl-24 flex">
+      <div className="flex justify-between pr-24 font-medium sticky top-0 navbarcustomstyle bg-white">
+        <div className="align-center pl-24 pb-2 flex">
           <img
             src={navLogo6}
             alt="nav logo"
-            className="w-42 h-16 pr-6 cursor-pointer"
+            className="w-42 h-16 pr-3 cursor-pointer"
           />
-          <ul className="list-none flex pt-8 space-between text-lg font-medium text-center">
+          <ul className="list-none flex pt-6 space-between text-lg font-medium text-center">
             <li className="text-active pr-4 cursor-pointer">Home</li>
-            <li className="pr-4 cursor-pointer">About</li>
-            <li className="pr-4 cursor-pointer">Products</li>
-            <li className="pr-4 cursor-pointer">Conversions</li>
-            <li className="pr-4 cursor-pointer">Open an account</li>
-            <li className="pr-4 cursor-pointer">Contact us</li>
+            <li className="mr-4 cursor-pointer borderbottom ">About</li>
+            <li className="mr-4 cursor-pointer borderbottom ">Products</li>
+            <li className="mr-4 cursor-pointer borderbottom ">Conversions</li>
+            <li className="mr-4 cursor-pointer borderbottom ">
+              Open an account
+            </li>
+            <li className="mr-4 cursor-pointer borderbottom ">Contact us</li>
           </ul>
         </div>
-        <div className="pt-6">
-          <button className="pr-3.5 pt-3 pl-3.5 pb-2.5 gap-1.5 bg-nav-background rounded-s-md rounded-e-md">
+        <div className="pt-3">
+          <button className="pr-3.5 pt-2.5 pl-3.5 pb-2.5 gap-1.5 bg-nav-background rounded-s-md rounded-e-md">
             Download app
           </button>
         </div>
