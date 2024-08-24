@@ -9,7 +9,6 @@ module.exports = {
         active: "#3BB9F1",
         "swift-span": "#202224",
         "stepsCard-background": " #58C3F333",
-        // "stepsCard-background": " #333",
       },
       boxShadow: {
         "nav-shadow": "0px 0px 2px 0px #0000001A",
@@ -19,6 +18,9 @@ module.exports = {
       },
       backgroundImage: {
         "footer-texture": "url('assets/stepsBG.png')",
+      },
+      fontFamily: {
+        Inter: ["Inter"], // Add your custom font here
       },
     },
   },
