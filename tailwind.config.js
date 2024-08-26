@@ -11,7 +11,7 @@ module.exports = {
         "stepsCard-background": " #58C3F333",
       },
       boxShadow: {
-        "nav-shadow": "0px 0px 2px 0px #0000001A",
+        "nav-shadow": "0px 4px 4px 0px #00000033",
         "card-shadow": "8px 0px 16px 0px #00000026",
         "stepsCard-shadow": "0px 0px 37.67px 0px #FFFFFF40",
         "privacy-shadow": "17.54px 0px 35.07px 0px #00000026",

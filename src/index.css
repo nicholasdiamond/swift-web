@@ -47,7 +47,27 @@
   display: none !important;
 }
 
+.borderbottom {
+  border-bottom: 1px solid white;
+  border-bottom-width: 5%;
+}
+
 .borderbottom:hover {
   border-bottom: 1px solid lightblue;
   border-bottom-width: 5%;
+}
+
+.custom {
+  margin-top: -48px;
+  margin-left: 379px;
+  padding-top: 2px;
+}
+
+.bill {
+  margin-top: -20px;
+  margin-left: 364px;
+  padding: 1px;
+}
+
+.BILLS {
 }
