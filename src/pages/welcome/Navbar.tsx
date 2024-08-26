@@ -6,58 +6,75 @@ import navLogo4 from "../../assets/welcomeIGLogo.png";
 import navLogo5 from "../../assets/welcomeXLogo.png";
 import navLogo6 from "../../assets/welcomeNavLogo.png";
 import { TiArrowSortedDown } from "react-icons/ti";
+import { IoIosMenu } from "react-icons/io";
 
 export default function Navbar() {
   return (
     <>
-      <div className="navTopSection bg-nav-background p-1 pr-16">
-        <div className="flex pr-2.5 gap-2 justify-end">
-          <img src={navLogo3} alt="nav logo" className="w-9 h-6 pr-0 mr-0" />
-          <p className="w-2.5 h-2.5 pt-1.5 pr-6 pl-0 ml-0 text-arrow-down cursor-pointer">
-            <TiArrowSortedDown />
-          </p>
-          <div className="pt-1 flex gap-1.5">
+      <div className="">
+        <div className="navTopSection bg-nav-background p-1 pr-16">
+          <div className="flex pr-2.5 gap-2 justify-end pt-1">
+            <img src={navLogo3} alt="nav logo" className="w-9 h-6 pr-0 mr-0" />
+            <p className="w-2.5 h-2.5 pt-1.5 pr-6 pl-0 ml-0 text-arrow-down cursor-pointer">
+              <TiArrowSortedDown />
+            </p>
+            <div className=" flex gap-1.5">
+              <img
+                src={navLogo4}
+                alt="nav logo"
+                className="shadow-nav-shadow w-5 h-5 p-px rounded-s-full rounded-e-full cursor-pointer"
+              />
+              <img
+                src={navLogo5}
+                alt="nav logo"
+                className="shadow-nav-shadow w-5 h-5 p-px rounded-s-full rounded-e-full cursor-pointer"
+              />
+              <img
+                src={navLogo2}
+                alt="nav logo"
+                className="shadow-nav-shadow w-5 h-5 p-px rounded-s-full rounded-e-full cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-between pr-24 font-medium sticky top-0 navbarcustomstyle shadow-nav-shadow bg-white">
+          <div className="align-center pl-24  flex">
             <img
-              src={navLogo4}
+              src={navLogo6}
               alt="nav logo"
-              className="shadow-nav-shadow w-5 h-5 p-px rounded-s-full rounded-e-full cursor-pointer"
+              className="w-42 h-16 pr-3 cursor-pointer"
             />
-            <img
-              src={navLogo5}
-              alt="nav logo"
-              className="shadow-nav-shadow w-5 h-5 p-px rounded-s-full rounded-e-full cursor-pointer"
-            />
-            <img
-              src={navLogo2}
-              alt="nav logo"
-              className="shadow-nav-shadow w-5 h-5 p-px rounded-s-full rounded-e-full cursor-pointer"
-            />
+            <ul className="list-none flex pt-7 space-between text-lg font-medium text-center">
+              <li className="text-active pr-4 cursor-pointer">Home</li>
+              <li className="mr-4 cursor-pointer borderbottom ">About</li>
+              <li className="mr-4 cursor-pointer borderbottom ">Products</li>
+              <li className="mr-4 cursor-pointer borderbottom ">Conversions</li>
+              <li className="mr-4 cursor-pointer borderbottom ">
+                Open an account
+              </li>
+              <li className="mr-4 cursor-pointer borderbottom ">Contact us</li>
+            </ul>
+          </div>
+          <div className="pt-3">
+            <button className="pr-3.5 pt-2.5 pl-3.5 pb-2.5 gap-1.5 bg-nav-background rounded-s-md rounded-e-md">
+              Download app
+            </button>
           </div>
         </div>
       </div>
 
-      <div className="flex justify-between pr-24 font-medium sticky top-0 navbarcustomstyle bg-white">
-        <div className="align-center pl-24 pb-2 flex">
-          <img
-            src={navLogo6}
-            alt="nav logo"
-            className="w-42 h-16 pr-3 cursor-pointer"
-          />
-          <ul className="list-none flex pt-6 space-between text-lg font-medium text-center">
-            <li className="text-active pr-4 cursor-pointer">Home</li>
-            <li className="mr-4 cursor-pointer borderbottom ">About</li>
-            <li className="mr-4 cursor-pointer borderbottom ">Products</li>
-            <li className="mr-4 cursor-pointer borderbottom ">Conversions</li>
-            <li className="mr-4 cursor-pointer borderbottom ">
-              Open an account
-            </li>
-            <li className="mr-4 cursor-pointer borderbottom ">Contact us</li>
-          </ul>
-        </div>
-        <div className="pt-3">
-          <button className="pr-3.5 pt-2.5 pl-3.5 pb-2.5 gap-1.5 bg-nav-background rounded-s-md rounded-e-md">
-            Download app
-          </button>
+      {/* Responsive Nav */}
+      <div className=" xl:hidden sm:flex">
+        <div className="flex justify-between">
+          <div>
+            <img src={navLogo6} alt="Nav logo" />
+          </div>
+          <div className="flex">
+            <img src={navLogo3} alt="Nav logo" />
+            <TiArrowSortedDown />
+            <IoIosMenu className="pl-3" />
+          </div>
         </div>
       </div>
     </>
