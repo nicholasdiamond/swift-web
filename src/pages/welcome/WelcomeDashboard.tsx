@@ -168,7 +168,17 @@ export default function WelcomeDashboard() {
         <div className="flex justify-center flex-wrap pl-0 gap-3 pt-0">
           <Card className="w-2/5 h-11/12 border shadow-card-shadow">
             <Card.Img variant="top" src={bills} />
+            <div className="custom text-end bg-white w-20">
+              <p className="text-center text-2xl pt-1 font-semibold text-active">
+                FAST
+              </p>
+            </div>
             <Card.Body>
+              <div className="text-end bill bg-active w-20">
+                <p className="text-center text-2xl pt-1 text-white font-semibold">
+                  100%
+                </p>
+              </div>
               <Card.Title className="bold">PAY BILLS</Card.Title>
               <Card.Text>
                 We cover a wide range bill payment ranging from airtime
@@ -179,8 +189,18 @@ export default function WelcomeDashboard() {
           </Card>
           <Card className="w-2/5 h-11/12 border shadow-card-shadow">
             <Card.Img variant="top" src={currency} />
+            <div className="custom text-end bg-white w-20">
+              <p className="text-center text-2xl pt-1 font-semibold text-active">
+                RATE
+              </p>
+            </div>
             <Card.Body>
-              <Card.Title className="bold">Fast</Card.Title>
+              <div className="text-end bill bg-active w-20">
+                <p className="text-center text-2xl pt-1 text-white font-semibold">
+                  100%
+                </p>
+              </div>
+              <Card.Title className="bold">CURRENCY CONVERSION</Card.Title>
               <Card.Text>
                 Get a better rate conversion with us on all currency exchange
                 and do more with your forex to local conversions
@@ -189,8 +209,18 @@ export default function WelcomeDashboard() {
           </Card>
           <Card className="w-2/5 h-11/12 border shadow-card-shadow">
             <Card.Img variant="top" src={deposit} />
+            <div className="custom text-end bg-white w-20">
+              <p className="text-center text-2xl pt-1 font-semibold text-active">
+                SAFE
+              </p>
+            </div>
             <Card.Body>
-              <Card.Title className="bold">Fast</Card.Title>
+              <div className="text-end bill bg-active  w-20">
+                <p className="text-center text-2xl pt-1 text-white font-semibold">
+                  100%
+                </p>
+              </div>
+              <Card.Title className="bold">DEPOSIT</Card.Title>
               <Card.Text>
                 Reliably save with Swiftpoint for fulfilling your money
                 objectives like building a savings, expenditure motives and
@@ -200,8 +230,18 @@ export default function WelcomeDashboard() {
           </Card>
           <Card className="w-2/5 h-11/12 border shadow-card-shadow">
             <Card.Img variant="top" src={transfer} />
+            <div className="custom text-end bg-white ">
+              <p className="text-center text-2xl pt-1 font-semibold text-active">
+                SWIFT
+              </p>
+            </div>
             <Card.Body>
-              <Card.Title className="bold">Fast</Card.Title>
+              <div className="text-end bill BILLS bg-active ">
+                <p className="text-center text-2xl pt-1 text-white font-semibold">
+                  100%
+                </p>
+              </div>
+              <Card.Title className="bold">TRANSFER</Card.Title>
               <Card.Text>
                 Seamlessly send funds to other Swiftpoint users around you
                 without hassle and get a considerable fee charge on each
