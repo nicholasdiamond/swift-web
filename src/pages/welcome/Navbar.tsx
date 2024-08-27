@@ -1,5 +1,4 @@
 import React from "react";
-// import navLogo1 from "../../assets/arrow_drop_up.png";
 import navLogo2 from "../../assets/welcLinkLogo.png";
 import navLogo3 from "../../assets/welcNavCountryLogo.png";
 import navLogo4 from "../../assets/welcomeIGLogo.png";
