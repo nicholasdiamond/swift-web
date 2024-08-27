@@ -11,7 +11,7 @@ import { IoIosMenu } from "react-icons/io";
 export default function Navbar() {
   return (
     <>
-      <div className="">
+      <div className="max-sm:hidden">
         <div className="navTopSection bg-nav-background p-1 pr-16">
           <div className="flex pr-2.5 gap-2 justify-end pt-1">
             <img src={navLogo3} alt="nav logo" className="w-9 h-6 pr-0 mr-0" />
@@ -65,15 +65,15 @@ export default function Navbar() {
       </div>
 
       {/* Responsive Nav */}
-      <div className=" xl:hidden sm:flex">
-        <div className="flex justify-between">
+      <div className="2xl:hidden md:hidden lg:hidden xl:hidden sm:flex">
+        <div className="flex justify-between p-2 pt-0">
           <div>
-            <img src={navLogo6} alt="Nav logo" />
+            <img src={navLogo6} alt="Nav logo" className="w-24 h-12" />
           </div>
-          <div className="flex">
-            <img src={navLogo3} alt="Nav logo" />
-            <TiArrowSortedDown />
-            <IoIosMenu className="pl-3" />
+          <div className="flex pt-3">
+            <img src={navLogo3} alt="Nav logo" className="w-8 h-7 pt-1" />
+            <TiArrowSortedDown className="text-2xl pt-2" />
+            <IoIosMenu className="text-3xl pl-2" />
           </div>
         </div>
       </div>
