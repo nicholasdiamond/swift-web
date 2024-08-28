@@ -63,8 +63,8 @@ export default function WelcomeDashboard() {
               payment platform
             </p>
           </div>
-          <div className="flex mb-8 gap-3 flex-wrap max-w-8xl max-sm:max-w-2xl max-sm:justify-center">
-            <Card className="w-64 border shadow-card-shadow">
+          <div className="flex mb-8 gap-3 flex-wrap max-w-8xl max-sm:max-w-2xl max-sm:justify-center max-sm:pl-3 mobile-M:pl-7">
+            <Card className="w-64 border shadow-card-shadow mobile-M:w-72 ">
               <Card.Body className="bg-active h-4/5 center">
                 <img src={fast} alt="fast" className="p-8" />
               </Card.Body>
@@ -80,7 +80,7 @@ export default function WelcomeDashboard() {
                 </p>
               </Card.Body>
             </Card>
-            <Card className="w-64 border shadow-card-shadow">
+            <Card className="w-64 border shadow-card-shadow mobile-M:w-72 ">
               <Card.Body className="bg-active h-4/5 center">
                 <img src={reliable} alt="reliable" className="p-8" />
               </Card.Body>
@@ -96,7 +96,7 @@ export default function WelcomeDashboard() {
                 </p>
               </Card.Body>
             </Card>
-            <Card className="w-64 border shadow-card-shadow">
+            <Card className="w-64 border shadow-card-shadow mobile-M:w-72 ">
               <Card.Body className="bg-active h-4/5 center">
                 <img src={efficient} alt="efficient" className="p-8" />
               </Card.Body>
@@ -112,7 +112,7 @@ export default function WelcomeDashboard() {
                 </p>
               </Card.Body>
             </Card>
-            <Card className="w-64 border shadow-card-shadow">
+            <Card className="w-64 border shadow-card-shadow mobile-M:w-72 ">
               <Card.Body className="bg-active h-4/5 center">
                 <img src={reward} alt="reward" className="p-8" />
               </Card.Body>
@@ -128,7 +128,7 @@ export default function WelcomeDashboard() {
                 </p>
               </Card.Body>
             </Card>
-            <Card className="w-64 border shadow-card-shadow">
+            <Card className="w-64 border shadow-card-shadow mobile-M:w-72 ">
               <Card.Body className="bg-active h-4/5 center">
                 <img src={seamless} alt="seamless" className="p-8" />
               </Card.Body>
@@ -144,7 +144,7 @@ export default function WelcomeDashboard() {
                 </p>
               </Card.Body>
             </Card>
-            <Card className="w-64 border shadow-card-shadow">
+            <Card className="w-64 border shadow-card-shadow mobile-M:w-72 ">
               <Card.Body className="bg-active h-4/5 center">
                 <img src={integration} alt="integration" className="p-8" />
               </Card.Body>
@@ -166,7 +166,7 @@ export default function WelcomeDashboard() {
           <img
             src={breakOut}
             alt="breakOut"
-            className="h-3/5 w-11/12 max-sm:w-80 max-sm:h-44"
+            className="h-3/5 w-11/12 max-sm:w-80 max-sm:h-44 max-mobile-M:w-11/12 max-mobile-M:h-5/6"
           />
         </div>
       </div>
@@ -182,13 +182,13 @@ export default function WelcomeDashboard() {
         <div className="flex justify-center flex-wrap pl-0 gap-3 pt-0">
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
             <Card.Img variant="top" src={bills} />
-            <div className="customOffer max-sm:ml-53 text-end bg-white w-20">
+            <div className="customOffer max-sm:ml-53 mobile-M:ml-65 text-end bg-white w-20">
               <p className="text-center text-2xl pt-1 font-semibold text-active">
                 FAST
               </p>
             </div>
             <Card.Body>
-              <div className="text-end offersPercent max-sm:ml-54 bg-active w-20">
+              <div className="text-end offersPercent max-sm:ml-54 mobile-M:ml-66 bg-active w-20">
                 <p className="text-center text-2xl pt-1 text-white font-semibold">
                   100%
                 </p>
@@ -203,13 +203,13 @@ export default function WelcomeDashboard() {
           </Card>
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
             <Card.Img variant="top" src={currency} />
-            <div className="customOffer max-sm:ml-53 text-end bg-white w-20">
+            <div className="customOffer max-sm:ml-53 mobile-M:ml-65 text-end bg-white w-20">
               <p className="text-center text-2xl pt-1 font-semibold text-active">
                 RATE
               </p>
             </div>
             <Card.Body>
-              <div className="text-end offersPercent max-sm:ml-54 bg-active w-20">
+              <div className="text-end offersPercent max-sm:ml-54 mobile-M:ml-66 bg-active w-20">
                 <p className="text-center text-2xl pt-1 text-white font-semibold">
                   100%
                 </p>
@@ -223,13 +223,13 @@ export default function WelcomeDashboard() {
           </Card>
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
             <Card.Img variant="top" src={deposit} />
-            <div className="customOffer max-sm:ml-53 text-end bg-white w-20">
+            <div className="customOffer max-sm:ml-53 mobile-M:ml-65 text-end bg-white w-20">
               <p className="text-center text-2xl pt-1 font-semibold text-active">
                 SAFE
               </p>
             </div>
             <Card.Body>
-              <div className="text-end offersPercent max-sm:ml-54 bg-active  w-20">
+              <div className="text-end offersPercent max-sm:ml-54 mobile-M:ml-66 bg-active  w-20">
                 <p className="text-center text-2xl pt-1 text-white font-semibold">
                   100%
                 </p>
@@ -244,13 +244,13 @@ export default function WelcomeDashboard() {
           </Card>
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
             <Card.Img variant="top" src={transfer} />
-            <div className="customOffer max-sm:ml-53 text-end bg-white ">
+            <div className="customOffer max-sm:ml-53 mobile-M:ml-65 text-end bg-white ">
               <p className="text-center text-2xl pt-1 font-semibold text-active">
                 SWIFT
               </p>
             </div>
             <Card.Body>
-              <div className="text-end offersPercent max-sm:ml-54 max-sm:w-20 bg-active ">
+              <div className="text-end offersPercent max-sm:ml-54 mobile-M:ml-66 max-sm:w-20 bg-active ">
                 <p className="text-center text-2xl pt-1 text-white font-semibold">
                   100%
                 </p>
@@ -268,7 +268,7 @@ export default function WelcomeDashboard() {
 
       <div className="bg-footer-texture bg-[length:1180px_640px] bg-no-repeat h-4/5 p-20 pb-32 mb-8 mt-20 max-sm:p-10 max-sm:mt-8 max-sm:text-center max-sm:pt-8 max-sm:h-5/6 max-sm:bg-[length:1370px_1095px]">
         <div className="max-w-5xl m-auto text-center max-sm:max-w-2xl">
-          <h2 className="font-bold max-sm:pb-1 2xl:pb-5  md:pb-5  lg:pb-5  xl:pb-5 ">
+          <h2 className="font-bold max-sm:pb-1 2xl:pb-5  md:pb-5  lg:pb-5  xl:pb-5 mobile-M:pb-3">
             Three Steps to get onboarded with us
           </h2>
           <div className="flex gap-4 max-w-5xl m-auto max-sm:flex-wrap">
@@ -281,7 +281,7 @@ export default function WelcomeDashboard() {
               <img
                 src={scanner}
                 alt="scanner"
-                className="w-48 max-sm:w-32 max-sm:pl-20 max-sm:pb-1 md:pl-28 md:pb-3 xl:pl-28 xl:pb-3 lg:pl-28 lg:pb-3 2xl:pl-28 2xl:pb-3"
+                className="w-48 max-sm:w-32 max-sm:pl-20 max-sm:pb-1 md:pl-28 md:pb-3 xl:pl-28 xl:pb-3 lg:pl-28 lg:pb-3 2xl:pl-28 2xl:pb-3 mobile-M:w-44 mobile-M:pl-28 mobile-M:pb-3"
               />
               <h2 className="font-bold max-sm:pb-0 max-sm:mb-0">Scan</h2>
               <p>
@@ -300,7 +300,7 @@ export default function WelcomeDashboard() {
               <img
                 src={download}
                 alt="download"
-                className="w-48 max-sm:w-32 max-sm:pl-20 max-sm:pb-1 md:pl-28 md:pb-3 xl:pl-28 xl:pb-3 lg:pl-28 lg:pb-3 2xl:pl-28 2xl:pb-3"
+                className="w-48 max-sm:w-32 max-sm:pl-20 max-sm:pb-1 md:pl-28 md:pb-3 xl:pl-28 xl:pb-3 lg:pl-28 lg:pb-3 2xl:pl-28 2xl:pb-3 mobile-M:w-44 mobile-M:pl-28 mobile-M:pb-3"
               />
               <h2 className="font-bold max-sm:pb-0 max-sm:mb-0">Download</h2>
               <p>
@@ -318,7 +318,7 @@ export default function WelcomeDashboard() {
               <img
                 src={register}
                 alt="register"
-                className="w-48 max-sm:w-32 max-sm:pl-20 max-sm:pb-1 md:pl-28 md:pb-3 xl:pl-28 xl:pb-3 lg:pl-28 lg:pb-3 2xl:pl-28 2xl:pb-3"
+                className="w-48 max-sm:w-32 max-sm:pl-20 max-sm:pb-1 md:pl-28 md:pb-3 xl:pl-28 xl:pb-3 lg:pl-28 lg:pb-3 2xl:pl-28 2xl:pb-3 mobile-M:w-44 mobile-M:pl-28 mobile-M:pb-3"
               />
               <h2 className="font-bold max-sm:pb-0 max-sm:mb-0">Register</h2>
               <p>
@@ -330,12 +330,12 @@ export default function WelcomeDashboard() {
         </div>
       </div>
 
-      <div className=" max-w-4xl m-auto pt-20 pl-10 pr-10 pb-20">
-        <p className="font-semibold text-2xl pb-5">
+      <div className=" max-w-4xl m-auto pt-20 pl-10 pr-10 pb-20 mobile-M:pt-8 mobile-M:pb-8 mobile-M:pl-2">
+        <p className="font-bold text-2xl pb-5 mobile-M:pb-2 mobile-M:text-nowrap mobile-M:text-center">
           What we represent @Swiftpoint{" "}
           <span className="text-red-700 "> ?</span>
         </p>
-        <div className="2xl:hidden  md:hidden  lg:hidden  xl:hidden max-sm:block">
+        <div className="2xl:hidden  md:hidden  lg:hidden  xl:hidden max-sm:block mobile-M:pl-14">
           <div>
             <Card className="w-64 border h-5/6 shadow-privacy-shadow mb-3">
               <Card.Body className="bg-active h-2/5 center">
@@ -490,8 +490,8 @@ export default function WelcomeDashboard() {
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-2 max-sm:flex max-sm:flex-wrap max-sm:gap-0 max-sm:ml-1">
-            <div className="max-sm:w-36">
+          <div className="flex flex-wrap gap-2 max-sm:flex max-sm:flex-wrap max-sm:gap-0 max-sm:ml-1 mobile-M:pl-4">
+            <div className="max-sm:w-36 mobile-M:w-40">
               <p
                 className="pl-8 font-bold pb-0 mb-0 text-xl max-sm:text-base
               "
@@ -506,7 +506,7 @@ export default function WelcomeDashboard() {
               </ul>
             </div>
 
-            <div className="max-sm:w-36">
+            <div className="max-sm:w-36 mobile-M:w-40">
               <p
                 className="pl-8 font-bold pb-0 mb-0 text-xl max-sm:text-base
             "
@@ -519,7 +519,7 @@ export default function WelcomeDashboard() {
               </ul>
             </div>
 
-            <div className="max-sm:w-36">
+            <div className="max-sm:w-36 mobile-M:w-40">
               <p
                 className="pl-8 font-bold pb-0 mb-0 text-xl max-sm:text-base
             "
@@ -532,7 +532,7 @@ export default function WelcomeDashboard() {
               </ul>
             </div>
 
-            <div className="max-sm:w-36">
+            <div className="max-sm:w-36 mobile-M:w-40">
               <p
                 className="pl-8 font-bold pb-0 mb-0 text-xl max-sm:text-base
               "

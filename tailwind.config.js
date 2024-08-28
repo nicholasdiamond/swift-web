@@ -20,12 +20,27 @@ module.exports = {
         "footer-texture": "url('assets/stepsBG.png')",
       },
       fontFamily: {
-        Inter: ["Inter"], // Add your custom font here
+        Inter: ["Inter"],
       },
       spacing: {
         53: "212px",
         54: "197px",
         1: "-20px",
+        65: "261px",
+        66: "245px",
+      },
+      screens: {
+        "mobile-S": "320px",
+
+        "mobile-M": "375px",
+
+        "mobile-L": "425px",
+
+        tablet: "768px",
+
+        laptop: "1024px",
+
+        "laptop-L": "1440px",
       },
     },
   },
