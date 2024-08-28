@@ -22,6 +22,11 @@ module.exports = {
       fontFamily: {
         Inter: ["Inter"], // Add your custom font here
       },
+      spacing: {
+        53: "212px",
+        54: "197px",
+        1: "-20px",
+      },
     },
   },
   plugins: [],

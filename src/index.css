@@ -57,17 +57,18 @@
   border-bottom-width: 5%;
 }
 
-.custom {
+.customOffer {
   margin-top: -48px;
   margin-left: 379px;
   padding-top: 2px;
 }
 
-.bill {
+.offersPercent {
   margin-top: -20px;
   margin-left: 364px;
   padding: 1px;
 }
 
-.BILLS {
+.customAnimation {
+  max-height: 250px !important;
 }
