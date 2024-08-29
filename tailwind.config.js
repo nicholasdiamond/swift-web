@@ -28,6 +28,8 @@ module.exports = {
         1: "-20px",
         65: "261px",
         66: "245px",
+        75: "307px",
+        76: "292px",
       },
       screens: {
         "mobile-S": "320px",
