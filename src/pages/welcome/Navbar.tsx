@@ -37,26 +37,36 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="flex justify-between pr-24 font-medium sticky top-0 navbarcustomstyle shadow-nav-shadow bg-white">
-          <div className="align-center pl-24  flex">
+        <div className="flex justify-between pr-24 font-medium sticky top-0 navbarcustomstyle shadow-nav-shadow bg-white tablet:pr-2">
+          <div className="align-center pl-24 flex tablet:pl-2">
             <img
               src={navLogo6}
               alt="nav logo"
-              className="w-42 h-16 pr-3 cursor-pointer"
+              className="w-42 h-16 pr-3 cursor-pointer tablet:pr-0"
             />
-            <ul className="list-none flex pt-7 space-between text-lg font-medium text-center">
-              <li className="text-active pr-4 cursor-pointer">Home</li>
-              <li className="mr-4 cursor-pointer borderbottom ">About</li>
-              <li className="mr-4 cursor-pointer borderbottom ">Products</li>
-              <li className="mr-4 cursor-pointer borderbottom ">Conversions</li>
-              <li className="mr-4 cursor-pointer borderbottom ">
+            <ul className="list-none flex pt-7 space-between text-lg font-medium text-center tablet:text-base tablet:justify-normal">
+              <li className="text-active pr-4 cursor-pointer tablet:mr-2 tablet:pr-0">
+                Home
+              </li>
+              <li className="mr-4 cursor-pointer borderbottom tablet:mr-2">
+                About
+              </li>
+              <li className="mr-4 cursor-pointer borderbottom tablet:mr-2">
+                Products
+              </li>
+              <li className="mr-4 cursor-pointer borderbottom tablet:mr-2">
+                Conversions
+              </li>
+              <li className="mr-4 cursor-pointer borderbottom tablet:mr-2">
                 Open an account
               </li>
-              <li className="mr-4 cursor-pointer borderbottom ">Contact us</li>
+              <li className="mr-4 cursor-pointer borderbottom tablet:mr-2">
+                Contact us
+              </li>
             </ul>
           </div>
           <div className="pt-3">
-            <button className="pr-3.5 pt-2.5 pl-3.5 pb-2.5 gap-1.5 bg-nav-background rounded-s-md rounded-e-md">
+            <button className="pr-3.5 pt-2.5 pl-3.5 pb-2.5 gap-1.5 bg-nav-background rounded-s-md rounded-e-md tablet:p-2 tablet:text-nowrap tablet:gap-0">
               Download app
             </button>
           </div>
