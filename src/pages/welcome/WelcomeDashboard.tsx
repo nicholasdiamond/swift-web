@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./Navbar";
 import banner from "../../assets/welcomeBanner.png";
 import serviceBanner from "../../assets/servicesBanner.png";
