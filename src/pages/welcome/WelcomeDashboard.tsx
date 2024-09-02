@@ -63,7 +63,7 @@ export default function WelcomeDashboard() {
               payment platform
             </p>
           </div>
-          <div className="flex mb-8 gap-3 flex-wrap max-w-8xl max-sm:max-w-2xl max-sm:justify-center max-sm:pl-3 max-mobile-M:pl-7 mobile-L:pl-8 tablet:pl-2 tablet:max-w-4xl tablet:m-auto">
+          <div className="flex mb-8 gap-3 flex-wrap max-w-8xl max-sm:max-w-2xl max-sm:justify-center max-sm:pl-3 max-sm:ml-5 max-mobile-M:pl-7 mobile-L:pl-8 tablet:pl-2 tablet:max-w-4xl tablet:m-auto">
             <Card className="w-64 border shadow-card-shadow mobile-M:w-72 mobile-L:w-80 tablet:w-60 lg:w-64">
               <Card.Body className="bg-active h-4/5 center">
                 <img src={fast} alt="fast" className="p-8" />
@@ -266,7 +266,7 @@ export default function WelcomeDashboard() {
         </div>
       </div>
 
-      <div className="bg-footer-texture bg-[length:1350px_640px] bg-no-repeat h-4/5 p-20 pb-32 mb-8 mt-20 max-sm:p-10 max-sm:mt-8 max-sm:text-center max-sm:pt-8 max-sm:h-5/6 max-sm:bg-[length:1370px_1095px]  laptop-L:bg-[length:1433px_620px]">
+      <div className="bg-footer-texture bg-[length:1433px_620px] bg-no-repeat h-4/5 p-20 pb-32 mb-8 mt-20 max-sm:p-10 max-sm:mt-8 max-sm:text-center max-sm:pt-8 max-sm:h-5/6 max-sm:bg-[length:1370px_1095px]  laptop-L:bg-[length:1433px_620px]">
         <div className="max-w-5xl m-auto text-center max-sm:max-w-2xl">
           <h2 className="font-bold max-sm:pb-1 2xl:pb-5  md:pb-5  lg:pb-5  xl:pb-5 mobile-M:pb-3">
             Three Steps to get onboarded with us
@@ -478,7 +478,7 @@ export default function WelcomeDashboard() {
         </Carousel>
       </div>
 
-      <footer className="bg-footer-texture bg-[length:1350px_650px] bg-no-repeat p-20 max-sm:p-3 laptop-L:bg-[length:1432px_610px]">
+      <footer className="bg-footer-texture bg-[length:1432px_610px] bg-no-repeat p-20 max-sm:p-3 laptop-L:bg-[length:1432px_610px]">
         <div className="max-w-4xl m-auto flex gap-10 pt-10 max-sm:block max-sm:pt-3 max-sm:max-w-2xl">
           <div className="max-sm:flex max-sm:justify-center max-sm:pb-3">
             <div>
