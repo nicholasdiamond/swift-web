@@ -266,7 +266,7 @@ export default function WelcomeDashboard() {
         </div>
       </div>
 
-      <div className="bg-footer-texture bg-[length:1433px_620px] bg-no-repeat h-4/5 p-20 pb-32 mb-8 mt-20 max-sm:p-10 max-sm:mt-8 max-sm:text-center max-sm:pt-8 max-sm:h-5/6 max-sm:bg-[length:1370px_1095px]  laptop-L:bg-[length:1433px_620px]">
+      <div className="bg-footer-texture bg-[length:1433px_620px]  h-4/5 p-20 pb-32 mb-8 mt-20 max-sm:p-10 max-sm:mt-8 max-sm:text-center max-sm:pt-8 max-sm:h-5/6 max-sm:bg-[length:1370px_1095px]  laptop-L:bg-[length:1433px_620px]">
         <div className="max-w-5xl m-auto text-center max-sm:max-w-2xl">
           <h2 className="font-bold max-sm:pb-1 2xl:pb-5  md:pb-5  lg:pb-5  xl:pb-5 mobile-M:pb-3">
             Three Steps to get onboarded with us
@@ -478,7 +478,7 @@ export default function WelcomeDashboard() {
         </Carousel>
       </div>
 
-      <footer className="bg-footer-texture bg-[length:1432px_610px] bg-no-repeat p-20 max-sm:p-3 laptop-L:bg-[length:1432px_610px]">
+      <footer className="bg-footer-texture bg-[length:1432px_610px] p-20 max-sm:p-3 laptop-L:bg-[length:1432px_610px]">
         <div className="max-w-4xl m-auto flex gap-10 pt-10 max-sm:block max-sm:pt-3 max-sm:max-w-2xl">
           <div className="max-sm:flex max-sm:justify-center max-sm:pb-3">
             <div>
