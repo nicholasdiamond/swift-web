@@ -7,67 +7,52 @@ import { TiArrowSortedDown } from "react-icons/ti";
 import { IoIosMenu } from "react-icons/io";
 
 export default function Navbar() {
+  // window.onscroll = function () {
+  //   myFunction();
+  // };
+
+  // // Get the navbar
+  // const navbar = document.getElementById("navbar");
+
+  // // Get the offset position of the navbar
+  // const sticky = navbar.offsetTop;
+
+  // // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  // function myFunction() {
+  //   if (window.scrollY >= sticky) {
+  //     navbar.classList.add("sticky");
+  //   } else {
+  //     navbar.classList.remove("sticky");
+  //   }
+  // }
   return (
     <>
       <div className="max-sm:hidden">
-        <div className="navTopSection bg-nav-background p-1 pr-16">
-          <div className="flex pr-2.5 gap-2 justify-end pt-1">
-            <img src={navLogo3} alt="nav logo" className="w-9 h-6 pr-0 mr-0" />
-            <p className="w-2.5 h-2.5 pt-1.5 pr-6 pl-0 ml-0 text-arrow-down cursor-pointer">
-              <TiArrowSortedDown />
-            </p>
-            <div className=" flex gap-1.5">
+        <div className="navTopSection bg-nav-background pr-24">
+          <div className="flex gap-2.5 justify-end pt-1">
+            <div className="flex">
+              <img src={navLogo3} alt="nav logo" className="w-7 h-5 " />
+              <p className="w-2.5 h-2.5 pt-1.5 text-arrow-down cursor-pointer">
+                <TiArrowSortedDown className="m-0 p-0 text-xs" />
+              </p>
+            </div>
+            <div className=" flex">
               <img
                 src={navLogo4}
                 alt="nav logo"
-                className="shadow-nav-shadow w-5 h-5 p-px rounded-s-full rounded-e-full cursor-pointer"
+                className=" w-5 h-5 p-px rounded-s-full rounded-e-full cursor-pointer"
               />
               <img
                 src={navLogo5}
                 alt="nav logo"
-                className="shadow-nav-shadow w-5 h-5 p-px rounded-s-full rounded-e-full cursor-pointer"
+                className=" w-5 h-5 p-px rounded-s-full rounded-e-full cursor-pointer"
               />
               <img
                 src={navLogo2}
                 alt="nav logo"
-                className="shadow-nav-shadow w-5 h-5 p-px rounded-s-full rounded-e-full cursor-pointer"
+                className=" w-5 h-5 p-px rounded-s-full rounded-e-full cursor-pointer"
               />
             </div>
-          </div>
-        </div>
-
-        <div className="flex justify-between lg:pr-24 font-medium sticky top-0 navbarcustomstyle shadow-nav-shadow bg-white tablet:pr-2">
-          <div className="align-center lg:pl-24 flex tablet:pl-2">
-            <img
-              src={navLogo6}
-              alt="nav logo"
-              className="w-42 h-16 pr-3 cursor-pointer tablet:pr-0"
-            />
-            <ul className="list-none flex pt-7 space-between lg:text-lg font-medium text-center tablet:text-base tablet:justify-normal">
-              <li className="text-active lg:pr-4 cursor-pointer tablet:mr-2 tablet:pr-0">
-                Home
-              </li>
-              <li className="lg:mr-4 cursor-pointer borderbottom tablet:mr-2">
-                About
-              </li>
-              <li className="lg:mr-4 cursor-pointer borderbottom tablet:mr-2">
-                Products
-              </li>
-              <li className="lg:mr-4 cursor-pointer borderbottom tablet:mr-2">
-                Conversions
-              </li>
-              <li className="lg:mr-4 cursor-pointer borderbottom tablet:mr-2">
-                Open an account
-              </li>
-              <li className="lg:mr-4 cursor-pointer borderbottom tablet:mr-2">
-                Contact us
-              </li>
-            </ul>
-          </div>
-          <div className="pt-3">
-            <button className="pr-3.5 pt-2.5 pl-3.5 pb-2.5 gap-1.5 bg-nav-background rounded-s-md rounded-e-md tablet:p-2 tablet:text-nowrap tablet:gap-0">
-              Download app
-            </button>
           </div>
         </div>
       </div>
