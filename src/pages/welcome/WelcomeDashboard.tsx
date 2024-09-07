@@ -1,3 +1,4 @@
+import navLogo6 from "../../assets/welcomeNavLogo.png";
 import Navbar from "./Navbar";
 import banner from "../../assets/welcomeBanner.png";
 import serviceBanner from "../../assets/servicesBanner.png";
@@ -33,6 +34,37 @@ export default function WelcomeDashboard() {
   return (
     <>
       <Navbar />
+
+      <div className="stickyNav max-sm:hidden">
+        <div className="flex justify-between lg:pr-24 text-sm top-0 navbarcustomstyle shadow-nav-shadow bg-white tablet:pr-2">
+          <div className="align-center lg:pl-32 flex tablet:pl-2">
+            <img
+              src={navLogo6}
+              alt="nav logo"
+              className="w-28 h-14 pr-3 cursor-pointer tablet:pr-0"
+            />
+            <ul className="list-none flex unorderedList pt-4 mb-1 space-between lg:text-lg text-xs text-center tablet:text-base tablet:justify-normal">
+              <li className="text-active activeclass">Home</li>{" "}
+              {/* tablet:mr-2 tablet:pr-0 */}
+              <li className="borderbottom ">About</li>
+              {/* tablet:mr-2 */}
+              <li className="borderbottom ">Products</li>
+              {/* tablet:mr-2 */}
+              <li className="borderbottom ">Conversions</li>
+              {/* tablet:mr-2 */}
+              <li className="borderbottom ">Open an account</li>
+              {/* tablet:mr-2 */}
+              <li className="borderbottom ">Contact us</li>
+              {/* tablet:mr-2 */}
+            </ul>
+          </div>
+          <div className="pt-3">
+            <button className="pr-2 pt-2.5 pl-2 w-28 pb-2.5 gap-1.5 bg-nav-background rounded-s-md rounded-e-md tablet:p-2 tablet:text-nowrap tablet:gap-0">
+              Download app
+            </button>
+          </div>
+        </div>
+      </div>
       <Carousel fade className="carouselControl customAnimation">
         <Carousel.Item>
           <img src={banner} alt="First slide" />
@@ -45,10 +77,11 @@ export default function WelcomeDashboard() {
         </Carousel.Item>
       </Carousel>
 
-      <div className="flex justify-center max-w-6xl m-auto max-sm:max-w-3xl max-sm:pl-2 max-sm:pr-2 tablet:pl-4">
+      {/* <div className="flex justify-center max-w-4xl m-auto max-sm:max-w-3xl max-sm:pl-2 max-sm:pr-2 tablet:pl-4"> */}
+      {/* <div className="flex gap-0 max-w-4xl m-auto max-sm:max-w-3xl">
         <div className="pt-40 z-50 max-sm:pt-10 tablet:pt-20 lg:pt-40">
           <div>
-            <p className="text-2xl w-9/12 font-medium leading-8 pb-8 max-sm:text-base max-sm:pb-2 max-sm:max-w-40">
+            <p className="text-3xl w-9/12 font-medium leading-9 pb-8 max-sm:text-base max-sm:pb-2 max-sm:max-w-40">
               Break out from slow and insecure transactions with our{" "}
               <span className="font-bold text-3xl text-swift-span max-sm:text-xl">
                 Swift,
@@ -63,8 +96,8 @@ export default function WelcomeDashboard() {
               payment platform
             </p>
           </div>
-          <div className="flex mb-8 gap-3 flex-wrap max-w-8xl max-sm:max-w-2xl max-sm:justify-center max-sm:pl-3 max-sm:ml-5 max-mobile-M:pl-7 mobile-L:pl-8 tablet:pl-2 tablet:max-w-4xl tablet:m-auto">
-            <Card className="w-64 border shadow-card-shadow mobile-M:w-72 mobile-L:w-80 tablet:w-60 lg:w-64">
+          <div className="flex mb-8 gap-3 flex-wrap max-w-8xl max-sm:max-w-8xl max-sm:justify-center tablet:pl-2 tablet:max-w-4xl tablet:m-auto">
+            <Card className="w-full border shadow-card-shadow tablet:w-60 lg:w-64">
               <Card.Body className="bg-active h-4/5 center">
                 <img src={fast} alt="fast" className="p-8" />
               </Card.Body>
@@ -80,7 +113,7 @@ export default function WelcomeDashboard() {
                 </p>
               </Card.Body>
             </Card>
-            <Card className="w-64 border shadow-card-shadow mobile-M:w-72 mobile-L:w-80 tablet:w-60 lg:w-64">
+            <Card className="w-full border shadow-card-shadow tablet:w-60 lg:w-64">
               <Card.Body className="bg-active h-4/5 center">
                 <img src={reliable} alt="reliable" className="p-8" />
               </Card.Body>
@@ -96,7 +129,7 @@ export default function WelcomeDashboard() {
                 </p>
               </Card.Body>
             </Card>
-            <Card className="w-64 border shadow-card-shadow mobile-M:w-72 mobile-L:w-80 tablet:w-60 lg:w-64">
+            <Card className="w-full border shadow-card-shadow tablet:w-60 lg:w-64">
               <Card.Body className="bg-active h-4/5 center">
                 <img src={efficient} alt="efficient" className="p-8" />
               </Card.Body>
@@ -112,7 +145,7 @@ export default function WelcomeDashboard() {
                 </p>
               </Card.Body>
             </Card>
-            <Card className="w-64 border shadow-card-shadow mobile-M:w-72 mobile-L:w-80 tablet:w-60 lg:w-64">
+            <Card className="w-full border shadow-card-shadow tablet:w-60 lg:w-64">
               <Card.Body className="bg-active h-4/5 center">
                 <img src={reward} alt="reward" className="p-8" />
               </Card.Body>
@@ -128,7 +161,7 @@ export default function WelcomeDashboard() {
                 </p>
               </Card.Body>
             </Card>
-            <Card className="w-64 border shadow-card-shadow mobile-M:w-72 mobile-L:w-80 tablet:w-60 lg:w-64">
+            <Card className="w-full border shadow-card-shadow tablet:w-60 lg:w-64">
               <Card.Body className="bg-active h-4/5 center">
                 <img src={seamless} alt="seamless" className="p-8" />
               </Card.Body>
@@ -144,7 +177,7 @@ export default function WelcomeDashboard() {
                 </p>
               </Card.Body>
             </Card>
-            <Card className="w-64 border shadow-card-shadow mobile-M:w-72 mobile-L:w-80 tablet:w-60 lg:w-64">
+            <Card className="w-full border shadow-card-shadow tablet:w-60 lg:w-64">
               <Card.Body className="bg-active h-4/5 center">
                 <img src={integration} alt="integration" className="p-8" />
               </Card.Body>
@@ -162,16 +195,143 @@ export default function WelcomeDashboard() {
             </Card>
           </div>
         </div>
-        <div className="breakout w-8/12 pr-8 max-sm:pr-1 max-sm:w-full tablet:pr-2 lg:w-5/12 lg:h-3/5">
+        <div className="breakout ">
           <img
             src={breakOut}
             alt="breakOut"
             className="h-3/5 w-11/12 max-sm:w-80 max-sm:h-44 mobile-M:w-11/12 mobile-M:h-44 mobile-L:h-48 tablet:h-2/5 lg:w-full lg:h-screen"
           />
         </div>
+      </div> */}
+
+      <div className="flexbox">
+        <div className="left">
+          <div className="pt-10 z-50 max-sm:pt-10 tablet:pt-20">
+            <div className="pt-10">
+              <p className="text-3xl w-9/12 font-medium leading-9 pb-10 max-sm:text-base max-sm:pb-2 max-sm:max-w-40">
+                Break out from slow and insecure transactions with our{" "}
+                <span className="font-bold text-3xl text-swift-span max-sm:text-xl">
+                  Swift,
+                </span>{" "}
+                <span className="font-bold text-3xl text-active max-sm:text-xl">
+                  Reliable
+                </span>{" "}
+                and{" "}
+                <span className="font-bold text-3xl text-swift-span max-sm:text-xl">
+                  Secure
+                </span>{" "}
+                payment platform
+              </p>
+            </div>
+            <div className="flex mb-8 gap-3 flex-wrap max-w-8xl  tablet:max-w-4xl tablet:m-auto">
+              <Card className="border shadow-card-shadow lg:w-52">
+                <Card.Body className="bg-active h-3/5 center">
+                  <img src={fast} alt="fast" className="p-3" />
+                </Card.Body>
+                <Card.Body>
+                  <Card.Title className="bold">Fast</Card.Title>
+                  <Card.Text className="border-bottom">
+                    Make payments for your cable networks with ease using our
+                    platform and get best deals.
+                  </Card.Text>
+                  <p className="flex justify-end font-bold pb-0 mb-0">
+                    PAY{" "}
+                    <IoMdCheckmark className="pl-1 text-2xl pb-1 text-active" />
+                  </p>
+                </Card.Body>
+              </Card>
+              <Card className="border shadow-card-shadow lg:w-52">
+                <Card.Body className="bg-active h-3/5 center">
+                  <img src={reliable} alt="reliable" className="p-3" />
+                </Card.Body>
+                <Card.Body>
+                  <Card.Title className="bold">Reliable</Card.Title>
+                  <Card.Text className="border-bottom">
+                    Make payments for your cable networks with ease using our
+                    platform and get best deals.
+                  </Card.Text>
+                  <p className="flex justify-end font-bold pb-0 mb-0">
+                    PAY{" "}
+                    <IoMdCheckmark className="pl-1 text-2xl pb-1 text-active" />
+                  </p>
+                </Card.Body>
+              </Card>
+              <Card className="border shadow-card-shadow lg:w-52">
+                <Card.Body className="bg-active h-3/5 center">
+                  <img src={efficient} alt="efficient" className="p-3" />
+                </Card.Body>
+                <Card.Body>
+                  <Card.Title className="bold">Efficient</Card.Title>
+                  <Card.Text className="border-bottom">
+                    Make payments for your cable networks with ease using our
+                    platform and get best deals.
+                  </Card.Text>
+                  <p className="flex justify-end font-bold pb-0 mb-0">
+                    PAY{" "}
+                    <IoMdCheckmark className="pl-1 text-2xl pb-1 text-active" />
+                  </p>
+                </Card.Body>
+              </Card>
+              <Card className="border shadow-card-shadow lg:w-52">
+                <Card.Body className="bg-active h-3/5 center">
+                  <img src={reward} alt="reward" className="p-3" />
+                </Card.Body>
+                <Card.Body>
+                  <Card.Title className="bold">Reward</Card.Title>
+                  <Card.Text className="border-bottom">
+                    Make payments for your cable networks with ease using our
+                    platform and get best deals.
+                  </Card.Text>
+                  <p className="flex justify-end font-bold pb-0 mb-0">
+                    PAY{" "}
+                    <IoMdCheckmark className="pl-1 text-2xl pb-1 text-active" />
+                  </p>
+                </Card.Body>
+              </Card>
+              <Card className="border shadow-card-shadow lg:w-52">
+                <Card.Body className="bg-active h-3/5 center">
+                  <img src={seamless} alt="seamless" className="p-3" />
+                </Card.Body>
+                <Card.Body>
+                  <Card.Title className="bold">Seamless</Card.Title>
+                  <Card.Text className="border-bottom">
+                    Make payments for your cable networks with ease using our
+                    platform and get best deals.
+                  </Card.Text>
+                  <p className="flex justify-end font-bold pb-0 mb-0">
+                    PAY{" "}
+                    <IoMdCheckmark className="pl-1 text-2xl pb-1 text-active" />
+                  </p>
+                </Card.Body>
+              </Card>
+              <Card className="border shadow-card-shadow lg:w-52">
+                <Card.Body className="bg-active h-3/5 center">
+                  <img src={integration} alt="integration" className="p-3" />
+                </Card.Body>
+                <Card.Body>
+                  <Card.Title className="bold">Integrations</Card.Title>
+                  <Card.Text className="border-bottom">
+                    Make payments for your cable networks with ease using our
+                    platform and get best deals.
+                  </Card.Text>
+                  <p className="flex justify-end font-bold pb-0 mb-0">
+                    PAY{" "}
+                    <IoMdCheckmark className="pl-1 text-2xl pb-1 text-active" />
+                  </p>
+                </Card.Body>
+              </Card>
+            </div>
+          </div>
+        </div>
+
+        <div className="right">
+          <div className="breakout">
+            <img src={breakOut} alt="breakOut" />
+          </div>
+        </div>
       </div>
 
-      <div className="max-w-6xl m-auto pb-8 max-sm:max-w-3xl">
+      <div className="cardSection m-auto pb-8 max-sm:max-w-3xl">
         <div className="pt-20 pb-0 max-sm:justify-center max-sm:pt-0 max-sm:pl-8">
           <img
             src={excitingOffer}
@@ -179,22 +339,24 @@ export default function WelcomeDashboard() {
             className="w-4/12 max-sm:w-11/12"
           />
         </div>
-        <div className="flex justify-center flex-wrap pl-0 gap-3 pt-0">
+        <div className="flex justify-center flex-wrap pl-0 gap-4 pt-0">
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
             <Card.Img variant="top" src={bills} />
             <div className="customOffer lg:ml-98 max-sm:ml-53 mobile-M:ml-65 text-end bg-white w-20 mobile-L:ml-75 tablet:ml-57">
-              <p className="text-center text-2xl pt-1 font-semibold text-active">
+              <p className="text-center text-2xl pt-1 font-medium text-active">
                 FAST
               </p>
             </div>
             <Card.Body>
               <div className="text-end offersPercent max-sm:ml-54 mobile-M:ml-66 mobile-L:ml-76 bg-active w-20 tablet:ml-58 lg:ml-90">
-                <p className="text-center text-2xl pt-1 text-white font-semibold">
+                <p className="text-center text-2xl pt-1 text-white font-medium">
                   100%
                 </p>
               </div>
-              <Card.Title className="bold">PAY BILLS</Card.Title>
-              <Card.Text>
+              <Card.Title className="bold center texttitle">
+                PAY BILLS
+              </Card.Title>
+              <Card.Text className="textcolor">
                 We cover a wide range bill payment ranging from airtime
                 recharge, internet subscription, travel tickets, cable recharge,
                 electricity top-up e.t.c
@@ -204,18 +366,20 @@ export default function WelcomeDashboard() {
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
             <Card.Img variant="top" src={currency} />
             <div className="customOffer lg:ml-98 max-sm:ml-53 mobile-M:ml-65 text-end bg-white w-20 mobile-L:ml-75 tablet:ml-57">
-              <p className="text-center text-2xl pt-1 font-semibold text-active">
+              <p className="text-center text-2xl pt-1 font-medium text-active">
                 RATE
               </p>
             </div>
             <Card.Body>
               <div className="text-end offersPercent max-sm:ml-54 mobile-M:ml-66 mobile-L:ml-76 bg-active w-20 tablet:ml-58 lg:ml-90">
-                <p className="text-center text-2xl pt-1 text-white font-semibold">
+                <p className="text-center text-2xl pt-1 text-white font-medium">
                   100%
                 </p>
               </div>
-              <Card.Title className="bold">CURRENCY CONVERSION</Card.Title>
-              <Card.Text>
+              <Card.Title className="bold center texttitle">
+                CURRENCY CONVERSION
+              </Card.Title>
+              <Card.Text className="textcolor">
                 Get a better rate conversion with us on all currency exchange
                 and do more with your forex to local conversions
               </Card.Text>
@@ -224,18 +388,18 @@ export default function WelcomeDashboard() {
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
             <Card.Img variant="top" src={deposit} />
             <div className="customOffer lg:ml-98 max-sm:ml-53 mobile-M:ml-65 text-end bg-white w-20 mobile-L:ml-75 tablet:ml-57">
-              <p className="text-center text-2xl pt-1 font-semibold text-active">
+              <p className="text-center text-2xl pt-1 font-medium text-active">
                 SAFE
               </p>
             </div>
             <Card.Body>
               <div className="text-end offersPercent max-sm:ml-54 mobile-M:ml-66 mobile-L:ml-76 bg-active  w-20 tablet:ml-58 lg:ml-90">
-                <p className="text-center text-2xl pt-1 text-white font-semibold">
+                <p className="text-center text-2xl pt-1 text-white font-medium">
                   100%
                 </p>
               </div>
-              <Card.Title className="bold">DEPOSIT</Card.Title>
-              <Card.Text>
+              <Card.Title className="bold center texttitle">DEPOSIT</Card.Title>
+              <Card.Text className="textcolor">
                 Reliably save with Swiftpoint for fulfilling your money
                 objectives like building a savings, expenditure motives and
                 investment related decisions
@@ -245,18 +409,20 @@ export default function WelcomeDashboard() {
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
             <Card.Img variant="top" src={transfer} />
             <div className="customOffer lg:ml-98 max-sm:ml-53 mobile-M:ml-65 text-end bg-white mobile-L:ml-75 tablet:ml-57">
-              <p className="text-center text-2xl pt-1 font-semibold text-active">
+              <p className="text-center text-2xl pt-1 font-medium text-active">
                 SWIFT
               </p>
             </div>
             <Card.Body>
               <div className="text-end offersPercent max-sm:ml-54 mobile-M:ml-66 mobile-L:ml-76 max-sm:w-20 bg-active  tablet:ml-58 tablet:w-20 lg:ml-90">
-                <p className="text-center text-2xl pt-1 text-white font-semibold">
+                <p className="text-center text-2xl pt-1 text-white font-medium">
                   100%
                 </p>
               </div>
-              <Card.Title className="bold">TRANSFER</Card.Title>
-              <Card.Text>
+              <Card.Title className="bold center texttitle">
+                TRANSFER
+              </Card.Title>
+              <Card.Text className="textcolor">
                 Seamlessly send funds to other Swiftpoint users around you
                 without hassle and get a considerable fee charge on each
                 transfer
@@ -335,7 +501,7 @@ export default function WelcomeDashboard() {
           What we represent @Swiftpoint{" "}
           <span className="text-red-700 "> ?</span>
         </p>
-        <div className="2xl:hidden  md:hidden  lg:hidden  xl:hidden max-sm:block mobile-M:pl-14">
+        <div className="2xl:hidden  md:hidden  lg:hidden  xl:hidden max-sm:block max-sm:max-w-8xl">
           <div>
             <Card className="w-64 border h-5/6 shadow-privacy-shadow mb-3">
               <Card.Body className="bg-active h-2/5 center">
