@@ -37,7 +37,7 @@ export default function WelcomeDashboard() {
 
       <div className="stickyNav max-sm:hidden">
         <div className="flex justify-between lg:pr-24 text-sm top-0 navbarcustomstyle shadow-nav-shadow bg-white tablet:pr-2">
-          <div className="align-center lg:pl-32 flex tablet:pl-2">
+          <div className="align-center lg:pl-28 flex tablet:pl-2">
             <img
               src={navLogo6}
               alt="nav logo"
@@ -230,7 +230,7 @@ export default function WelcomeDashboard() {
                 </Card.Body>
                 <Card.Body>
                   <Card.Title className="bold">Fast</Card.Title>
-                  <Card.Text className="border-bottom">
+                  <Card.Text className="border-bottom text-sm">
                     Make payments for your cable networks with ease using our
                     platform and get best deals.
                   </Card.Text>
@@ -246,7 +246,7 @@ export default function WelcomeDashboard() {
                 </Card.Body>
                 <Card.Body>
                   <Card.Title className="bold">Reliable</Card.Title>
-                  <Card.Text className="border-bottom">
+                  <Card.Text className="border-bottom text-sm">
                     Make payments for your cable networks with ease using our
                     platform and get best deals.
                   </Card.Text>
@@ -262,7 +262,7 @@ export default function WelcomeDashboard() {
                 </Card.Body>
                 <Card.Body>
                   <Card.Title className="bold">Efficient</Card.Title>
-                  <Card.Text className="border-bottom">
+                  <Card.Text className="border-bottom text-sm">
                     Make payments for your cable networks with ease using our
                     platform and get best deals.
                   </Card.Text>
@@ -278,7 +278,7 @@ export default function WelcomeDashboard() {
                 </Card.Body>
                 <Card.Body>
                   <Card.Title className="bold">Reward</Card.Title>
-                  <Card.Text className="border-bottom">
+                  <Card.Text className="border-bottom text-sm">
                     Make payments for your cable networks with ease using our
                     platform and get best deals.
                   </Card.Text>
@@ -294,7 +294,7 @@ export default function WelcomeDashboard() {
                 </Card.Body>
                 <Card.Body>
                   <Card.Title className="bold">Seamless</Card.Title>
-                  <Card.Text className="border-bottom">
+                  <Card.Text className="border-bottom text-sm">
                     Make payments for your cable networks with ease using our
                     platform and get best deals.
                   </Card.Text>
@@ -310,7 +310,7 @@ export default function WelcomeDashboard() {
                 </Card.Body>
                 <Card.Body>
                   <Card.Title className="bold">Integrations</Card.Title>
-                  <Card.Text className="border-bottom">
+                  <Card.Text className="border-bottom text-sm">
                     Make payments for your cable networks with ease using our
                     platform and get best deals.
                   </Card.Text>
@@ -336,7 +336,7 @@ export default function WelcomeDashboard() {
           <img
             src={excitingOffer}
             alt="exciting offers"
-            className="w-4/12 max-sm:w-11/12"
+            className="w-5/12 max-sm:w-11/12"
           />
         </div>
         <div className="flex justify-center flex-wrap pl-0 gap-4 pt-0">

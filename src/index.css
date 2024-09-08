@@ -99,17 +99,17 @@
 
 .flexbox {
   display: flex;
-  width: 65%;
+  width: 63%;
   margin: auto;
 }
 
 .left {
-  width: 80%;
+  width: 85%;
 }
 
 .right {
-  width: 20%;
-  margin-left: -140px;
+  width: 15%;
+  margin-left: -100px;
 }
 
 .right img {
@@ -121,7 +121,7 @@
 }
 
 .cardSection {
-  max-width: 75%;
+  max-width: 72%;
 }
 
 .textcolor {
