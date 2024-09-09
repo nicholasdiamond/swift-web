@@ -1,8 +1,5 @@
 import navLogo6 from "../../assets/welcomeNavLogo.png";
 import Navbar from "./Navbar";
-import banner from "../../assets/welcomeBanner.png";
-import serviceBanner from "../../assets/servicesBanner.png";
-import transactionproofBanner from "../../assets/transactionproofBanner.png";
 import breakOut from "../../assets/breakOut.png";
 import reliable from "../../assets/security_update_good.png";
 import efficient from "../../assets/blur_on.png";
@@ -65,7 +62,8 @@ export default function WelcomeDashboard() {
           </div>
         </div>
       </div>
-      <Carousel fade className="carouselControl customAnimation">
+
+      {/* <Carousel fade className="carouselControl customAnimation">
         <Carousel.Item>
           <img src={banner} alt="First slide" />
         </Carousel.Item>
@@ -75,7 +73,11 @@ export default function WelcomeDashboard() {
         <Carousel.Item>
           <img src={transactionproofBanner} alt="Third slide" />
         </Carousel.Item>
-      </Carousel>
+      </Carousel> */}
+
+      <div className="banner">
+
+      </div>
 
       {/* <div className="flex justify-center max-w-4xl m-auto max-sm:max-w-3xl max-sm:pl-2 max-sm:pr-2 tablet:pl-4"> */}
       {/* <div className="flex gap-0 max-w-4xl m-auto max-sm:max-w-3xl">
@@ -433,61 +435,64 @@ export default function WelcomeDashboard() {
       </div>
 
       <div className="bg-footer-texture bg-[length:1433px_620px]  h-4/5 p-20 pb-32 mb-8 mt-20 max-sm:p-10 max-sm:mt-8 max-sm:text-center max-sm:pt-8 max-sm:h-5/6 max-sm:bg-[length:1370px_1095px]  laptop-L:bg-[length:1433px_620px]">
-        <div className="max-w-5xl m-auto text-center max-sm:max-w-2xl">
+        <div className=" m-auto text-center max-sm:max-w-2xl getOnboard">
           <h2 className="font-bold max-sm:pb-1 2xl:pb-5  md:pb-5  lg:pb-5  xl:pb-5 mobile-M:pb-3">
             Three Steps to get onboarded with us
           </h2>
           <div className="flex gap-4 max-w-5xl m-auto max-sm:flex-wrap">
-            <div className="shadow-stepsCard-shadow text-center p-2 w-96 bg-stepsCard-background">
+            <div className="shadow-stepsCard-shadow text-center p-2 w-full bg-stepsCard-background">
               <img
                 src={scan1}
                 alt="scanner"
-                className="w-20 max-sm:w-14 max-sm:pt-0 max-sm:pl-0  lg:pt-2 lg:pl-2 tablet:w-14"
+                // className="w-24 max-sm:w-14 max-sm:pt-0 max-sm:pl-0  lg:pt-2 lg:pl-2 tablet:w-14"
+                className="w-20"
               />
               <img
                 src={scanner}
                 alt="scanner"
-                className="w-48 max-sm:w-32 max-sm:pl-20 max-sm:pb-1 lg:pl-28 lg:pb-3  mobile-M:w-44 mobile-M:pl-28 mobile-M:pb-3 mobile-L:w-48 mobile-L:pl-32 tablet:pl-14 tablet:w-28 lg:w-52"
+                className="w-48 max-sm:w-32 max-sm:pl-20 max-sm:pb-1 lg:pl-20 lg:pb-3  mobile-M:w-44 mobile-M:pl-28 mobile-M:pb-3 mobile-L:w-48 mobile-L:pl-32 tablet:pl-14 tablet:w-28 lg:w-36"
               />
-              <h2 className="font-bold max-sm:pb-0 max-sm:mb-0">Scan</h2>
-              <p>
+              <h2 className="font-bold max-sm:pb-0 text-2xl max-sm:mb-0">Scan</h2>
+              <p className="text-sm">
                 Get our mobile app on apple and google playstore by scanning
                 this barcode and start experiencing swift payments on all bills
                 and expenditures
               </p>
             </div>
 
-            <div className="shadow-stepsCard-shadow text-center p-2 w-96 bg-stepsCard-background">
+            <div className="shadow-stepsCard-shadow text-center p-2 w-full bg-stepsCard-background">
               <img
                 src={download2}
                 alt="download"
-                className="w-20 max-sm:w-14 max-sm:pt-0 max-sm:pl-0  lg:pt-2 lg:pl-2 tablet:w-14"
+                // className="w-24 max-sm:w-14 max-sm:pt-0 max-sm:pl-0  lg:pt-2 lg:pl-2 tablet:w-14"
+                className="w-20"
               />
               <img
                 src={download}
                 alt="download"
-                className="w-48 max-sm:w-32 max-sm:pl-20 max-sm:pb-1 lg:pl-28 lg:pb-3  mobile-M:w-44 mobile-M:pl-28 mobile-M:pb-3 mobile-L:w-48 mobile-L:pl-32 tablet:pl-14 tablet:w-28 lg:w-52"
+                className="w-48 max-sm:w-32 max-sm:pl-20 max-sm:pb-1 lg:pl-20 lg:pb-3  mobile-M:w-44 mobile-M:pl-28 mobile-M:pb-3 mobile-L:w-48 mobile-L:pl-32 tablet:pl-14 tablet:w-28 lg:w-36"
               />
-              <h2 className="font-bold max-sm:pb-0 max-sm:mb-0">Download</h2>
-              <p>
+              <h2 className="font-bold max-sm:pb-0 text-2xl max-sm:mb-0">Download</h2>
+              <p className="text-sm">
                 Install our mobile app on your device after scanning and you are
                 on flight for swift transactions
               </p>
             </div>
 
-            <div className="shadow-stepsCard-shadow text-center p-2 w-96 bg-stepsCard-background">
+            <div className="shadow-stepsCard-shadow text-center p-2 w-full bg-stepsCard-background">
               <img
                 src={register3}
                 alt="register"
-                className="w-20 max-sm:w-14 max-sm:pt-0 max-sm:pl-0  lg:pt-2 lg:pl-2 tablet:w-14"
+                // className="w-24 max-sm:w-14 max-sm:pt-0 max-sm:pl-0  lg:pt-2 lg:pl-2 tablet:w-14"
+                className="w-20"
               />
               <img
                 src={register}
                 alt="register"
-                className="w-48 max-sm:w-32 max-sm:pl-20 max-sm:pb-1 lg:pl-28 lg:pb-3  mobile-M:w-44 mobile-M:pl-28 mobile-M:pb-3 mobile-L:w-48 mobile-L:pl-32 tablet:pl-14 tablet:w-28 lg:w-52"
+                className="w-48 max-sm:w-32 max-sm:pl-20 max-sm:pb-1 lg:pl-20 lg:pb-3  mobile-M:w-44 mobile-M:pl-28 mobile-M:pb-3 mobile-L:w-48 mobile-L:pl-32 tablet:pl-14 tablet:w-28 lg:w-36"
               />
-              <h2 className="font-bold max-sm:pb-0 max-sm:mb-0">Register</h2>
-              <p>
+              <h2 className="font-bold max-sm:pb-0 text-2xl max-sm:mb-0">Register</h2>
+              <p className="text-sm">
                 Now we need to know you by filling our simple form for KYC to
                 ensure authenti- cations and security on how platform
               </p>
