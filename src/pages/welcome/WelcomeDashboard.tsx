@@ -25,7 +25,6 @@ import swiftP3 from "../../assets/swiftP3.png";
 import footerlogo from "../../assets/welcomeNavLogo.png";
 import Card from "react-bootstrap/Card";
 import { IoMdCheckmark } from "react-icons/io";
-import { Carousel } from "react-bootstrap";
 
 export default function WelcomeDashboard() {
   return (
@@ -344,13 +343,13 @@ export default function WelcomeDashboard() {
         <div className="flex justify-center flex-wrap pl-0 gap-4 pt-0">
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
             <Card.Img variant="top" src={bills} />
-            <div className="customOffer lg:ml-98 max-sm:ml-53 mobile-M:ml-65 text-end bg-white w-20 mobile-L:ml-75 tablet:ml-57">
+            <div className="customOffer text-end bg-white w-20">
               <p className="text-center text-2xl pt-1 font-medium text-active">
                 FAST
               </p>
             </div>
             <Card.Body>
-              <div className="text-end offersPercent max-sm:ml-54 mobile-M:ml-66 mobile-L:ml-76 bg-active w-20 tablet:ml-58 lg:ml-90">
+              <div className="text-end offersPercent bg-active w-20 ">
                 <p className="text-center text-2xl pt-1 text-white font-medium">
                   100%
                 </p>
@@ -367,13 +366,13 @@ export default function WelcomeDashboard() {
           </Card>
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
             <Card.Img variant="top" src={currency} />
-            <div className="customOffer lg:ml-98 max-sm:ml-53 mobile-M:ml-65 text-end bg-white w-20 mobile-L:ml-75 tablet:ml-57">
+            <div className="customOffer text-end bg-white w-20">
               <p className="text-center text-2xl pt-1 font-medium text-active">
                 RATE
               </p>
             </div>
             <Card.Body>
-              <div className="text-end offersPercent max-sm:ml-54 mobile-M:ml-66 mobile-L:ml-76 bg-active w-20 tablet:ml-58 lg:ml-90">
+              <div className="text-end offersPercent bg-active w-20 ">
                 <p className="text-center text-2xl pt-1 text-white font-medium">
                   100%
                 </p>
@@ -389,13 +388,13 @@ export default function WelcomeDashboard() {
           </Card>
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
             <Card.Img variant="top" src={deposit} />
-            <div className="customOffer lg:ml-98 max-sm:ml-53 mobile-M:ml-65 text-end bg-white w-20 mobile-L:ml-75 tablet:ml-57">
+            <div className="customOffer text-end bg-white w-20">
               <p className="text-center text-2xl pt-1 font-medium text-active">
                 SAFE
               </p>
             </div>
             <Card.Body>
-              <div className="text-end offersPercent max-sm:ml-54 mobile-M:ml-66 mobile-L:ml-76 bg-active  w-20 tablet:ml-58 lg:ml-90">
+              <div className="text-end offersPercent bg-active  w-20 ">
                 <p className="text-center text-2xl pt-1 text-white font-medium">
                   100%
                 </p>
@@ -410,13 +409,13 @@ export default function WelcomeDashboard() {
           </Card>
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
             <Card.Img variant="top" src={transfer} />
-            <div className="customOffer lg:ml-98 max-sm:ml-53 mobile-M:ml-65 text-end bg-white mobile-L:ml-75 tablet:ml-57">
+            <div className="customOffer text-end bg-white">
               <p className="text-center text-2xl pt-1 font-medium text-active">
                 SWIFT
               </p>
             </div>
             <Card.Body>
-              <div className="text-end offersPercent max-sm:ml-54 mobile-M:ml-66 mobile-L:ml-76 max-sm:w-20 bg-active  tablet:ml-58 tablet:w-20 lg:ml-90">
+              <div className="text-end offersPercent max-sm:w-20 bg-active w-20">
                 <p className="text-center text-2xl pt-1 text-white font-medium">
                   100%
                 </p>
@@ -501,9 +500,9 @@ export default function WelcomeDashboard() {
         </div>
       </div>
 
-      <div className=" max-w-4xl m-auto pt-20 pl-10 pr-10 pb-20 mobile-M:pt-8 mobile-M:pb-8 mobile-M:pl-2 tablet:pl-8">
-        <p className="font-bold text-2xl pb-5 mobile-M:pb-2 mobile-M:text-nowrap mobile-M:text-center">
-          What we represent @Swiftpoint{" "}
+      <div className=" whatWePresent m-auto pt-20 pb-0 mobile-M:pt-8 mobile-M:pb-8 mobile-M:pl-2 tablet:pl-8">
+        <p className="font-bold flex justify-start text-3xl pb-5 mobile-M:pb-2 mobile-M:text-nowrap mobile-M:text-center">
+          What we represent @Swiftpoint {" "}
           <span className="text-red-700 "> ?</span>
         </p>
         <div className="2xl:hidden  md:hidden  lg:hidden  xl:hidden max-sm:block max-sm:max-w-8xl">
@@ -564,20 +563,18 @@ export default function WelcomeDashboard() {
           </div>
         </div>
 
-        <Carousel
-          fade
-          className="carouselControl customOfferAnimation max-sm:hidden"
-        >
-          <Carousel.Item>
-            <div className="flex">
+        
+<div className="cardContainer max-sm:hidden">
+  <div className="fadingCard fadingCard1">
+    <div className="flex">
               <div>
-                <Card className="w-80 border h-5/6 shadow-privacy-shadow">
+                <Card className="w-96 border h-5/6 shadow-privacy-shadow">
                   <Card.Body className="bg-active h-2/5 center">
-                    <img src={lock} alt="fast" className="p-8 w-32" />
+                    <img src={lock} alt="fast" className="p-8 w-40" />
                   </Card.Body>
                   <Card.Body>
-                    <Card.Title className="bold">Privacy</Card.Title>
-                    <Card.Text className="border-bottom">
+                    <Card.Title className="bold pt-3 pb-3">Privacy</Card.Title>
+                    <Card.Text className="border-bottom pb-4 mb-4">
                       Our authentication process is built safely to secure your
                       account with us and ensure payouts request users consent
                       before transaction processing
@@ -590,22 +587,22 @@ export default function WelcomeDashboard() {
                 </Card>
               </div>
               <div>
-                <img src={swiftP1} alt="swift point" className="w-96 top" />
+                <img src={swiftP1} alt="swift point" className="swiftpt h-full" />
               </div>
             </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="flex">
+  </div>
+  <div className="fadingCard fadingCard2">
+   <div className="flex">
               <div>
-                <Card className="w-80 border h-5/6 shadow-privacy-shadow">
+                <Card className="w-96 border h-5/6 shadow-privacy-shadow">
                   <Card.Body className="bg-active h-2/5 center">
-                    <img src={lock} alt="fast" className="p-8 w-32" />
+                    <img src={lock} alt="fast" className="p-8 w-40" />
                   </Card.Body>
                   <Card.Body>
-                    <Card.Title className="bold">
+                    <Card.Title className="bold pt-3 pb-3">
                       International wallets
                     </Card.Title>
-                    <Card.Text className="border-bottom">
+                    <Card.Text className="border-bottom pb-4 mb-4">
                       We represent good exchange rate and swift conversion of
                       currencies in all countries as to users desired interest
                     </Card.Text>
@@ -617,20 +614,20 @@ export default function WelcomeDashboard() {
                 </Card>
               </div>
               <div>
-                <img src={swiftP2} alt="swift point" className="w-96 top" />
+                <img src={swiftP2} alt="swift point" className="swiftpt h-full" />
               </div>
             </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="flex">
+  </div>
+  <div className="fadingCard fadingCard3">
+    <div className="flex">
               <div>
-                <Card className="w-80 border h-5/6 shadow-privacy-shadow">
+                <Card className="w-96 border h-5/6 shadow-privacy-shadow">
                   <Card.Body className="bg-active h-2/5 center">
-                    <img src={lock} alt="fast" className="p-8 w-32" />
+                    <img src={lock} alt="fast" className="p-8 w-40" />
                   </Card.Body>
                   <Card.Body>
-                    <Card.Title className="bold">Seamless UI</Card.Title>
-                    <Card.Text className="border-bottom">
+                    <Card.Title className="bold pt-3 pb-3">Seamless UI</Card.Title>
+                    <Card.Text className="border-bottom pb-4 mb-4">
                       We serve you at best with our services and app environment
                       by making all user interfaces best fit for users experince
                     </Card.Text>
@@ -642,12 +639,99 @@ export default function WelcomeDashboard() {
                 </Card>
               </div>
               <div>
-                <img src={swiftP3} alt="swift point" className="w-96 top" />
+                <img src={swiftP3} alt="swift point" className="swiftpt h-full" />
+              </div>
+            </div>
+  </div>
+</div>
+
+        {/* <Carousel
+          fade
+          className="carouselControl customOfferAnimation max-sm:hidden"
+        >
+          <Carousel.Item>
+            <div className="flex">
+              <div>
+                <Card className="w-96 border h-5/6 shadow-privacy-shadow">
+                  <Card.Body className="bg-active h-2/5 center">
+                    <img src={lock} alt="fast" className="p-8 w-40" />
+                  </Card.Body>
+                  <Card.Body>
+                    <Card.Title className="bold pt-3 pb-3">Privacy</Card.Title>
+                    <Card.Text className="border-bottom pb-4 mb-4">
+                      Our authentication process is built safely to secure your
+                      account with us and ensure payouts request users consent
+                      before transaction processing
+                    </Card.Text>
+                    <p className="flex justify-end font-bold pb-0">
+                      SECURE{" "}
+                      <IoMdCheckmark className="pl-1 text-2xl pb-1 text-active" />
+                    </p>
+                  </Card.Body>
+                </Card>
+              </div>
+              <div>
+                <img src={swiftP1} alt="swift point" className="swiftpt h-full" />
               </div>
             </div>
           </Carousel.Item>
-        </Carousel>
+          <Carousel.Item>
+            <div className="flex">
+              <div>
+                <Card className="w-96 border h-5/6 shadow-privacy-shadow">
+                  <Card.Body className="bg-active h-2/5 center">
+                    <img src={lock} alt="fast" className="p-8 w-40" />
+                  </Card.Body>
+                  <Card.Body>
+                    <Card.Title className="bold pt-3 pb-3">
+                      International wallets
+                    </Card.Title>
+                    <Card.Text className="border-bottom pb-4 mb-4">
+                      We represent good exchange rate and swift conversion of
+                      currencies in all countries as to users desired interest
+                    </Card.Text>
+                    <p className="flex justify-end font-bold pb-0">
+                      GLOBAL{" "}
+                      <IoMdCheckmark className="pl-1 text-2xl pb-1 text-active" />
+                    </p>
+                  </Card.Body>
+                </Card>
+              </div>
+              <div>
+                <img src={swiftP2} alt="swift point" className="swiftpt h-full" />
+              </div>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className="flex">
+              <div>
+                <Card className="w-96 border h-5/6 shadow-privacy-shadow">
+                  <Card.Body className="bg-active h-2/5 center">
+                    <img src={lock} alt="fast" className="p-8 w-40" />
+                  </Card.Body>
+                  <Card.Body>
+                    <Card.Title className="bold pt-3 pb-3">Seamless UI</Card.Title>
+                    <Card.Text className="border-bottom pb-4 mb-4">
+                      We serve you at best with our services and app environment
+                      by making all user interfaces best fit for users experince
+                    </Card.Text>
+                    <p className="flex justify-end font-bold pb-0">
+                      EASY TO USE{" "}
+                      <IoMdCheckmark className="pl-1 text-2xl pb-1 text-active" />
+                    </p>
+                  </Card.Body>
+                </Card>
+              </div>
+              <div>
+                <img src={swiftP3} alt="swift point" className="swiftpt h-full" />
+              </div>
+            </div>
+          </Carousel.Item>
+        </Carousel> */}
       </div>
+
+
+
 
       <footer className="bg-footer-texture bg-[length:1432px_610px] p-20 max-sm:p-3 laptop-L:bg-[length:1432px_610px]">
         <div className="max-w-4xl m-auto flex gap-10 pt-10 max-sm:block max-sm:pt-3 max-sm:max-w-2xl">

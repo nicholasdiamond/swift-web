@@ -58,13 +58,13 @@
 
 .customOffer {
   margin-top: -48px;
-  margin-left: 379px;
+  margin-left: 282px;
   padding-top: 2px;
 }
 
 .offersPercent {
   margin-top: -20px;
-  margin-left: 364px;
+  margin-left: 267px;
   padding: 1px;
 }
 
@@ -135,48 +135,83 @@
 .banner{
   height: 100vh;
   width: 100%;
-  background-image: url(./assets/welcomeBanner.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transition: 5s;
+  background-image: url(./assets/welcomeBanner.png);
+  transition: background-image 1s;
 
   animation-name: animate;
-  animation-direction: alternate-reverse;
-  animation-play-state: running;
+  animation-duration: 30s;
   animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
   animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }
-@keyframes animate{
-  0%{
-    background-image: url(./assets/welcomeBanner.png) ;
+
+@keyframes animate {
+  0%, 33% {
+    background-image: url(./assets/welcomeBanner.png);
+    opacity: 1;
   }
-  20%{
+  33%, 66% {
     background-image: url(./assets/servicesBanner.png);
+    opacity: 1;
   }
-  40%{
+  66%, 100% {
     background-image: url(./assets/transactionproofBanner.png);
-  }
-  60%{
-    background-image: url(./assets/welcomeBanner.png) ;
-  }
-  80%{
-    background-image: url(./assets/servicesBanner.png);
-  }
-  100%{
-    background-image: url(./assets/transactionproofBanner.png);
+    opacity: 1;
   }
 }
 
 .getOnboard{
   max-width: 800px;
-  /* padding-left: 10px; */
 }
 
-/* .customAnimation {
-  max-height: 270px !important;
-  ../../assets/welcomeBanner.png
-../../assets/servicesBanner.png
-../../assets/transactionproofBanner.png
-} */
+.whatWePresent{
+  max-width: 850px;
+  height: 690px;
+}
+
+.cardWidth{
+  width: 18rem !important;
+}
+
+.swiftpt{
+  top: 0;
+  padding-top: 0;
+  margin-top: -120px !important;
+  margin-bottom: 0px;
+}
+
+.cardContainer {
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+}
+
+.fadingCard {
+  animation: fade 20s linear infinite forwards;
+  opacity:0;
+}
+.fadingCard1,.fadingCard2 {
+  margin-right: -100%;
+}
+.fadingCard2 {animation-delay:6.6666s;}
+.fadingCard3 {animation-delay:13.3333s;}
+
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 1;
+  }
+  31% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+}
+
