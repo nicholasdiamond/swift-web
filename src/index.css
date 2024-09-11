@@ -215,3 +215,50 @@
   }
 }
 
+
+@media only screen and (max-width: 600px){  
+  .breakout {
+    width: 180px;
+  }
+  
+.customOffer {
+  margin-left: 212px;
+}
+
+.offersPercent {
+  margin-left: 196px;
+}
+
+.whatWePresent{
+  max-width: 850px;
+  height: 1400px;
+}
+ }
+
+@media only screen and (min-width: 375px){  
+.customOffer {
+  margin-left: 263px;
+}
+
+.offersPercent {
+  margin-left: 248px;
+}
+
+ }
+
+@media only screen and (min-width: 425px){  
+.customOffer {
+  margin-left: 308px;
+}
+
+.offersPercent {
+  margin-left: 293px;
+}
+
+.whatWePresent p:first-of-type{
+  max-width: 300px;
+  margin: auto;
+}
+
+ }
+
