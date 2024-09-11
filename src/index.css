@@ -58,13 +58,13 @@
 
 .customOffer {
   margin-top: -48px;
-  margin-left: 282px;
+  margin-left: 282px !important;
   padding-top: 2px;
 }
 
 .offersPercent {
   margin-top: -20px;
-  margin-left: 267px;
+  margin-left: 267px !important;
   padding: 1px;
 }
 
@@ -215,6 +215,10 @@
   }
 }
 
+.paragraph{
+  margin: 0 !important;
+  text-wrap: nowrap;
+}
 
 @media only screen and (max-width: 600px){ 
   
@@ -228,43 +232,63 @@
   }
   
 .customOffer {
-  margin-left: 212px;
+  margin-left: 212px !important;
 }
 
 .offersPercent {
-  margin-left: 196px;
+  margin-left: 196px !important;
 }
 
 .whatWePresent{
   max-width: 850px;
   height: 1400px;
 }
+
+.paragraph{
+  text-align: center;
+  text-wrap: wrap;
+}
  }
 
 @media only screen and (min-width: 375px){  
 .customOffer {
-  margin-left: 263px;
+  margin-left: 263px !important;
 }
 
 .offersPercent {
-  margin-left: 248px;
+  margin-left: 248px !important;
 }
 
  }
 
 @media only screen and (min-width: 425px){  
 .customOffer {
-  margin-left: 308px;
+  margin-left: 308px !important;
 }
 
 .offersPercent {
-  margin-left: 293px;
+  margin-left: 293px !important;
 }
 
 .whatWePresent p:first-of-type{
   max-width: 300px;
   margin: auto;
 }
+
+ }
+
+@media only screen and (min-width: 1024px){  
+  .customOffer {
+    margin-top: -48px;
+    margin-left: 282px !important;
+    padding-top: 2px;
+  }
+  
+  .offersPercent {
+    margin-top: -20px;
+    margin-left: 267px !important;
+    padding: 1px;
+  }
 
  }
 

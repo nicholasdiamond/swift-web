@@ -488,8 +488,9 @@ export default function WelcomeDashboard() {
         </div>
       </div>
 
-      <div className=" whatWePresent m-auto pt-20 pb-0 mobile-M:pt-8 mobile-M:pb-8   tablet:pl-8 max-sm:justify-center">
-        <p className="font-bold flex justify-start text-3xl pb-5 mobile-M:pb-2 mobile-M:pl-0 mobile-M:text-center max-sm:block max-sm:pb-2 max-sm:pl-10 max-sm:justify-center">
+      <div className=" whatWePresent m-auto pt-20 pb-0 mobile-M:pt-8 mobile-M:pb-8   tablet:pl-8 ">
+        <p className="font-bold justify-start text-3xl pb-5 mobile-M:pb-2 mobile-M:pl-0 
+        max-sm:block max-sm:pb-2 max-sm:pl-10 paragraph">
           What we represent @Swiftpoint<span className="text-red-700 "> ?</span>
         </p>
         <div className="2xl:hidden  md:hidden  lg:hidden  xl:hidden max-sm:flex max-sm:flex-wrap max-sm:justify-center max-sm:h-screen">
@@ -562,7 +563,7 @@ export default function WelcomeDashboard() {
                   </Card.Body>
                   <Card.Body>
                     <Card.Title className="bold pt-3 pb-3">Privacy</Card.Title>
-                    <Card.Text className="border-bottom pb-4 mb-4">
+                    <Card.Text className="border-bottom m-0 p-0 pb-4 mb-4">
                       Our authentication process is built safely to secure your
                       account with us and ensure payouts request users consent
                       before transaction processing
@@ -590,7 +591,7 @@ export default function WelcomeDashboard() {
                     <Card.Title className="bold pt-3 pb-3">
                       International wallets
                     </Card.Title>
-                    <Card.Text className="border-bottom pb-4 mb-4">
+                    <Card.Text className="border-bottom m-0 p-0 pb-4 mb-4">
                       We represent good exchange rate and swift conversion of
                       currencies in all countries as to users desired interest
                     </Card.Text>
@@ -615,7 +616,7 @@ export default function WelcomeDashboard() {
                   </Card.Body>
                   <Card.Body>
                     <Card.Title className="bold pt-3 pb-3">Seamless UI</Card.Title>
-                    <Card.Text className="border-bottom pb-4 mb-4">
+                    <Card.Text className="border-bottom m-0 p-0 pb-4 mb-4">
                       We serve you at best with our services and app environment
                       by making all user interfaces best fit for users experince
                     </Card.Text>
