@@ -225,7 +225,6 @@
 .banner{
   height: 80vh;
  }
-
   
   .breakout {
     width: 180px;
@@ -247,6 +246,10 @@
 .paragraph{
   text-align: center;
   text-wrap: wrap;
+}
+
+.border-bottom {
+  margin-bottom: 15px !important;
 }
  }
 
@@ -276,19 +279,65 @@
 }
 
  }
+ 
+ @media only screen and (min-width: 768px){
+  .texttitle{
+    font-size: 20px !important;
+    font-weight: 400;
+  }
 
-@media only screen and (min-width: 1024px){  
-  .customOffer {
-    margin-top: -48px;
-    margin-left: 282px !important;
-    padding-top: 2px;
+.customOffer {
+  margin-left: 164px !important;
+  margin-top: -48px;
+  font-size: 20px !important;
+  padding-top: 2px;
+  width: 56px;
+}
+
+.customOffer p{
+  padding: 0;
+  margin-top: 0;
+}
+
+.offersPercent {
+  margin-top: -20px;
+  margin-left: 148px !important;
+  padding: 1px;
+  font-size: 20px !important;
+  width: 56px;
+  padding-top: 2px;
+  }
+
+  
+.offersPercent p{
+  padding: 0;
+  margin-bottom: 10px;
+}
+  
+  .whatWePresent p:first-of-type{
+    max-width: 300px;
+    margin: auto;
   }
   
-  .offersPercent {
-    margin-top: -20px;
-    margin-left: 267px !important;
-    padding: 1px;
-  }
+.swiftpt{
+  margin-top: -120px !important;
+  margin-bottom: 0;
+  padding-bottom: 0px;
+}
 
  }
+ 
+ @media only screen and (min-width: 1024px){  
+   .customOffer {
+     margin-top: -48px;
+     margin-left: 282px !important;
+     padding-top: 2px;
+   }
+   
+   .offersPercent {
+     margin-top: -20px;
+     margin-left: 267px !important;
+     padding: 1px;
+   }
+  }
 

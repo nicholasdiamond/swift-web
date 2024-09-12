@@ -86,12 +86,12 @@ export default function WelcomeDashboard() {
               </p>
             </div>
             <div className="flex mb-8 gap-3 flex-wrap max-w-8xl  tablet:max-w-4xl tablet:m-auto">
-              <Card className="border shadow-card-shadow lg:w-52">
+              <Card className="border shadow-card-shadow lg:w-52 tablet:w-48">
                 <Card.Body className="bg-active h-3/5 center">
                   <img src={fast} alt="fast" className="p-3" />
                 </Card.Body>
                 <Card.Body>
-                  <Card.Title className="bold">Fast</Card.Title>
+                  <Card.Title className="bold tablet:text-lg">Fast</Card.Title>
                   <Card.Text className="border-bottom text-sm pb-3 mb-3">
                     Make payments for your cable networks with ease using our
                     platform and get best deals.
@@ -102,12 +102,12 @@ export default function WelcomeDashboard() {
                   </p>
                 </Card.Body>
               </Card>
-              <Card className="border shadow-card-shadow lg:w-52">
+              <Card className="border shadow-card-shadow lg:w-52 tablet:w-48">
                 <Card.Body className="bg-active h-3/5 center">
                   <img src={reliable} alt="reliable" className="p-3" />
                 </Card.Body>
                 <Card.Body>
-                  <Card.Title className="bold">Reliable</Card.Title>
+                  <Card.Title className="bold tablet:text-lg">Reliable</Card.Title>
                   <Card.Text className="border-bottom text-sm">
                     Make payments for your cable networks with ease using our
                     platform and get best deals.
@@ -118,12 +118,12 @@ export default function WelcomeDashboard() {
                   </p>
                 </Card.Body>
               </Card>
-              <Card className="border shadow-card-shadow lg:w-52">
+              <Card className="border shadow-card-shadow lg:w-52 tablet:w-48">
                 <Card.Body className="bg-active h-3/5 center">
                   <img src={efficient} alt="efficient" className="p-3" />
                 </Card.Body>
                 <Card.Body>
-                  <Card.Title className="bold">Efficient</Card.Title>
+                  <Card.Title className="bold tablet:text-lg">Efficient</Card.Title>
                   <Card.Text className="border-bottom text-sm">
                     Make payments for your cable networks with ease using our
                     platform and get best deals.
@@ -134,12 +134,12 @@ export default function WelcomeDashboard() {
                   </p>
                 </Card.Body>
               </Card>
-              <Card className="border shadow-card-shadow lg:w-52">
+              <Card className="border shadow-card-shadow lg:w-52 tablet:w-48">
                 <Card.Body className="bg-active h-3/5 center">
                   <img src={reward} alt="reward" className="p-3" />
                 </Card.Body>
                 <Card.Body>
-                  <Card.Title className="bold">Reward</Card.Title>
+                  <Card.Title className="bold tablet:text-lg">Reward</Card.Title>
                   <Card.Text className="border-bottom text-sm">
                     Make payments for your cable networks with ease using our
                     platform and get best deals.
@@ -150,7 +150,7 @@ export default function WelcomeDashboard() {
                   </p>
                 </Card.Body>
               </Card>
-              <Card className="border shadow-card-shadow lg:w-52">
+              <Card className="border shadow-card-shadow lg:w-52 tablet:w-48">
                 <Card.Body className="bg-active h-3/5 center">
                   <img src={seamless} alt="seamless" className="p-3" />
                 </Card.Body>
@@ -166,7 +166,7 @@ export default function WelcomeDashboard() {
                   </p>
                 </Card.Body>
               </Card>
-              <Card className="border shadow-card-shadow lg:w-52">
+              <Card className="border shadow-card-shadow lg:w-52 tablet:w-48">
                 <Card.Body className="bg-active h-3/5 center">
                   <img src={integration} alt="integration" className="p-3" />
                 </Card.Body>
@@ -332,13 +332,13 @@ export default function WelcomeDashboard() {
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
             <Card.Img variant="top" src={bills} />
             <div className="customOffer text-end bg-white w-20">
-              <p className="text-center text-2xl pt-1 font-medium text-active">
+              <p className="text-center text-2xl pt-1 font-medium text-active tablet:text-lg">
                 FAST
               </p>
             </div>
             <Card.Body>
               <div className="text-end offersPercent bg-active w-20 ">
-                <p className="text-center text-2xl pt-1 text-white font-medium">
+                <p className="text-center text-2xl pt-1 text-white font-medium tablet:text-lg">
                   100%
                 </p>
               </div>
@@ -355,13 +355,13 @@ export default function WelcomeDashboard() {
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
             <Card.Img variant="top" src={currency} />
             <div className="customOffer text-end bg-white w-20">
-              <p className="text-center text-2xl pt-1 font-medium text-active">
+              <p className="text-center text-2xl pt-1 font-medium text-active tablet:text-lg">
                 RATE
               </p>
             </div>
             <Card.Body>
               <div className="text-end offersPercent bg-active w-20 ">
-                <p className="text-center text-2xl pt-1 text-white font-medium">
+                <p className="text-center text-2xl pt-1 text-white font-medium tablet:text-lg">
                   100%
                 </p>
               </div>
@@ -377,13 +377,13 @@ export default function WelcomeDashboard() {
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
             <Card.Img variant="top" src={deposit} />
             <div className="customOffer text-end bg-white w-20">
-              <p className="text-center text-2xl pt-1 font-medium text-active">
+              <p className="text-center text-2xl pt-1 font-medium text-active tablet:text-lg">
                 SAFE
               </p>
             </div>
             <Card.Body>
               <div className="text-end offersPercent bg-active  w-20 ">
-                <p className="text-center text-2xl pt-1 text-white font-medium">
+                <p className="text-center text-2xl pt-1 text-white font-medium tablet:text-lg">
                   100%
                 </p>
               </div>
@@ -398,13 +398,13 @@ export default function WelcomeDashboard() {
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
             <Card.Img variant="top" src={transfer} />
             <div className="customOffer text-end bg-white">
-              <p className="text-center text-2xl pt-1 font-medium text-active">
+              <p className="text-center text-2xl pt-1 font-medium text-active tablet:text-lg">
                 SWIFT
               </p>
             </div>
             <Card.Body>
               <div className="text-end offersPercent max-sm:w-20 bg-active w-20">
-                <p className="text-center text-2xl pt-1 text-white font-medium">
+                <p className="text-center text-2xl pt-1 text-white font-medium tablet:text-lg">
                   100%
                 </p>
               </div>
@@ -432,7 +432,7 @@ export default function WelcomeDashboard() {
                 src={scan1}
                 alt="scanner"
                 // className="w-24 max-sm:w-14 max-sm:pt-0 max-sm:pl-0  lg:pt-2 lg:pl-2 tablet:w-14"
-                className="w-20"
+                className="w-20 tablet:w-14"
               />
               <img
                 src={scanner}
@@ -452,7 +452,7 @@ export default function WelcomeDashboard() {
                 src={download2}
                 alt="download"
                 // className="w-24 max-sm:w-14 max-sm:pt-0 max-sm:pl-0  lg:pt-2 lg:pl-2 tablet:w-14"
-                className="w-20"
+                className="w-20 tablet:w-14"
               />
               <img
                 src={download}
@@ -471,7 +471,7 @@ export default function WelcomeDashboard() {
                 src={register3}
                 alt="register"
                 // className="w-24 max-sm:w-14 max-sm:pt-0 max-sm:pl-0  lg:pt-2 lg:pl-2 tablet:w-14"
-                className="w-20"
+                className="w-20 tablet:w-14"
               />
               <img
                 src={register}
@@ -557,18 +557,18 @@ export default function WelcomeDashboard() {
   <div className="fadingCard fadingCard1">
     <div className="flex">
               <div>
-                <Card className="w-96 border h-5/6 shadow-privacy-shadow">
+                <Card className="w-96 border h-5/6 shadow-privacy-shadow tablet:w-72 tablet:h-4/6">
                   <Card.Body className="bg-active h-2/5 center">
-                    <img src={lock} alt="fast" className="p-8 w-40" />
+                    <img src={lock} alt="fast" className="p-8 w-40 tablet:p-0 tablet:w-20" />
                   </Card.Body>
                   <Card.Body>
-                    <Card.Title className="bold pt-3 pb-3">Privacy</Card.Title>
-                    <Card.Text className="border-bottom m-0 p-0 pb-4 mb-4">
+                    <Card.Title className="bold lg:pt-3 lg:pb-3 tablet:pt-2 tablet:pb-1">Privacy</Card.Title>
+                    <Card.Text className="border-bottom lg:pb-4 lg:mb-4 tablet:pb-3">
                       Our authentication process is built safely to secure your
                       account with us and ensure payouts request users consent
                       before transaction processing
                     </Card.Text>
-                    <p className="flex justify-end font-bold pb-0">
+                    <p className="flex justify-end font-bold pb-0 tablet:mb-0 tablet:pt-3">
                       SECURE{" "}
                       <IoMdCheckmark className="pl-1 text-2xl pb-1 text-active" />
                     </p>
@@ -583,19 +583,19 @@ export default function WelcomeDashboard() {
   <div className="fadingCard fadingCard2">
    <div className="flex">
               <div>
-                <Card className="w-96 border h-5/6 shadow-privacy-shadow">
+                <Card className="w-96 border h-5/6 shadow-privacy-shadow tablet:w-72 tablet:h-4/6">
                   <Card.Body className="bg-active h-2/5 center">
-                    <img src={lock} alt="fast" className="p-8 w-40" />
+                    <img src={lock} alt="fast" className="p-8 w-40 tablet:p-0 tablet:w-20" />
                   </Card.Body>
                   <Card.Body>
-                    <Card.Title className="bold pt-3 pb-3">
+                    <Card.Title className="bold lg:pt-3 lg:pb-3 tablet:pt-2 tablet:pb-1">
                       International wallets
                     </Card.Title>
-                    <Card.Text className="border-bottom m-0 p-0 pb-4 mb-4">
+                    <Card.Text className="border-bottom lg:pb-4 lg:mb-4 tablet:pb-3">
                       We represent good exchange rate and swift conversion of
                       currencies in all countries as to users desired interest
                     </Card.Text>
-                    <p className="flex justify-end font-bold pb-0">
+                    <p className="flex justify-end font-bold pb-0 tablet:mb-0 tablet:pt-3">
                       GLOBAL{" "}
                       <IoMdCheckmark className="pl-1 text-2xl pb-1 text-active" />
                     </p>
@@ -610,17 +610,17 @@ export default function WelcomeDashboard() {
   <div className="fadingCard fadingCard3">
     <div className="flex">
               <div>
-                <Card className="w-96 border h-5/6 shadow-privacy-shadow">
+                <Card className="w-96 border h-5/6 shadow-privacy-shadow tablet:w-72 tablet:h-4/6">
                   <Card.Body className="bg-active h-2/5 center">
-                    <img src={lock} alt="fast" className="p-8 w-40" />
+                    <img src={lock} alt="fast" className="p-8 w-40 tablet:p-0 tablet:w-20" />
                   </Card.Body>
                   <Card.Body>
-                    <Card.Title className="bold pt-3 pb-3">Seamless UI</Card.Title>
-                    <Card.Text className="border-bottom m-0 p-0 pb-4 mb-4">
+                    <Card.Title className="bold lg:pt-3 lg:pb-3 tablet:pt-2 tablet:pb-1">Seamless UI</Card.Title>
+                    <Card.Text className="border-bottom lg:pb-4 lg:mb-4 tablet:pb-3">
                       We serve you at best with our services and app environment
                       by making all user interfaces best fit for users experince
                     </Card.Text>
-                    <p className="flex justify-end font-bold pb-0">
+                    <p className="flex justify-end font-bold pb-0 tablet:mb-0 tablet:pt-3">
                       EASY TO USE{" "}
                       <IoMdCheckmark className="pl-1 text-2xl pb-1 text-active" />
                     </p>
