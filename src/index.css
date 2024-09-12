@@ -330,13 +330,13 @@
  @media only screen and (min-width: 1024px){  
    .customOffer {
      margin-top: -48px;
-     margin-left: 282px !important;
+     margin-left: 238px !important;
      padding-top: 2px;
    }
    
    .offersPercent {
      margin-top: -20px;
-     margin-left: 267px !important;
+     margin-left: 223px !important;
      padding: 1px;
    }
 
@@ -344,6 +344,10 @@
     padding: 0px !important;
     margin: 0px !important;
    }
+   
+.swiftpt{
+  margin-top: -115px !important;
+}
   }
  
  @media only screen and (min-width: 1440px){  
