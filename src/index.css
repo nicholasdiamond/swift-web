@@ -320,7 +320,7 @@
   }
   
 .swiftpt{
-  margin-top: -120px !important;
+  margin-top: -140px !important;
   margin-bottom: 0;
   padding-bottom: 0px;
 }
@@ -337,6 +337,39 @@
    .offersPercent {
      margin-top: -20px;
      margin-left: 267px !important;
+     padding: 1px;
+   }
+
+   .fadingCard .border-bottom{
+    padding: 0px !important;
+    margin: 0px !important;
+   }
+  }
+ 
+ @media only screen and (min-width: 1440px){  
+   .customOffer {
+     margin-top: -48px;
+     margin-left: 358px !important;
+     padding-top: 2px;
+   }
+   
+   .offersPercent {
+     margin-top: -20px;
+     margin-left: 342px !important;
+     padding: 1px;
+   }
+  }
+ 
+ @media only screen and (min-width: 2560px){  
+   .customOffer {
+     margin-top: -48px;
+     margin-left: 680px !important;
+     padding-top: 2px;
+   }
+   
+   .offersPercent {
+     margin-top: -20px;
+     margin-left: 665px !important;
      padding: 1px;
    }
   }

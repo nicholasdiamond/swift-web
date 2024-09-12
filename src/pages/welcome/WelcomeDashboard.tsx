@@ -553,13 +553,13 @@ export default function WelcomeDashboard() {
         </div>
 
         
-        <div className="cardContainer max-sm:hidden">
+        <div className="cardContainer max-sm:hidden tablet:pt-5">
   <div className="fadingCard fadingCard1">
     <div className="flex">
               <div>
-                <Card className="w-96 border h-5/6 shadow-privacy-shadow tablet:w-72 tablet:h-4/6">
+                <Card className="lg:w-96 border h-5/6 shadow-privacy-shadow tablet:w-72 tablet:h-4/6">
                   <Card.Body className="bg-active h-2/5 center">
-                    <img src={lock} alt="fast" className="p-8 w-40 tablet:p-0 tablet:w-20" />
+                    <img src={lock} alt="fast" className="p-8 w-40 max-tablet:p-0 max-tablet:w-20" />
                   </Card.Body>
                   <Card.Body>
                     <Card.Title className="bold lg:pt-3 lg:pb-3 tablet:pt-2 tablet:pb-1">Privacy</Card.Title>
@@ -583,9 +583,9 @@ export default function WelcomeDashboard() {
   <div className="fadingCard fadingCard2">
    <div className="flex">
               <div>
-                <Card className="w-96 border h-5/6 shadow-privacy-shadow tablet:w-72 tablet:h-4/6">
+                <Card className="lg:w-96 border h-5/6 shadow-privacy-shadow tablet:w-72 tablet:h-4/6">
                   <Card.Body className="bg-active h-2/5 center">
-                    <img src={lock} alt="fast" className="p-8 w-40 tablet:p-0 tablet:w-20" />
+                    <img src={lock} alt="fast" className="p-8 w-40 max-tablet:p-0 max-tablet:w-20" />
                   </Card.Body>
                   <Card.Body>
                     <Card.Title className="bold lg:pt-3 lg:pb-3 tablet:pt-2 tablet:pb-1">
@@ -610,9 +610,9 @@ export default function WelcomeDashboard() {
   <div className="fadingCard fadingCard3">
     <div className="flex">
               <div>
-                <Card className="w-96 border h-5/6 shadow-privacy-shadow tablet:w-72 tablet:h-4/6">
+                <Card className="lg:w-96 border h-5/6 shadow-privacy-shadow tablet:w-72 tablet:h-4/6">
                   <Card.Body className="bg-active h-2/5 center">
-                    <img src={lock} alt="fast" className="p-8 w-40 tablet:p-0 tablet:w-20" />
+                    <img src={lock} alt="fast" className="p-8 w-40 max-tablet:p-0 max-tablet:w-20" />
                   </Card.Body>
                   <Card.Body>
                     <Card.Title className="bold lg:pt-3 lg:pb-3 tablet:pt-2 tablet:pb-1">Seamless UI</Card.Title>
