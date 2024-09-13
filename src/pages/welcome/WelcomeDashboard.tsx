@@ -1,4 +1,7 @@
 import navLogo6 from "../../assets/welcomeNavLogo.png";
+import banner from "../../assets/welcomeBanner.png";
+import serviceBanner from "../../assets/servicesBanner.png";
+import transactionproofBanner from "../../assets/transactionproofBanner.png";
 import Navbar from "./Navbar";
 import breakOut from "../../assets/breakOut.png";
 import reliable from "../../assets/security_update_good.png";
@@ -25,13 +28,90 @@ import swiftP3 from "../../assets/swiftP3.png";
 import footerlogo from "../../assets/welcomeNavLogo.png";
 import Card from "react-bootstrap/Card";
 import { IoMdCheckmark } from "react-icons/io";
+import { Carousel } from "react-bootstrap";
+import React, { useEffect } from 'react';
 
 export default function WelcomeDashboard() {
+    // useEffect(() => {
+    //   const navLinks = document.getElementById("navLinks");
+    //   if (navLinks) {
+    //     const links = navLinks.getElementsByClassName("links") as HTMLCollectionOf<HTMLElement>;
+    //     for (let i = 0; i < links.length; i++) {
+    //       links[i].addEventListener("click", function() {
+    //         // Remove the active class from all links
+    //         const currentActive = document.getElementsByClassName("activeclass") as HTMLCollectionOf<HTMLElement>;
+    //         if (currentActive.length > 0) {
+    //           currentActive[0].className = currentActive[0].className.replace(" activeclass", "");
+    //         }
+    //         // Add the active class to the clicked link
+    //         this.className += " activeclass";
+    //         console.log(this);
+            
+    //       });
+    //     }
+    //   }
+    // }, []);
+
+
+    // useEffect(() => {
+    //   const navLinks = document.getElementById("navLinks");
+    //   if (navLinks) {
+    //     const links = navLinks.getElementsByClassName("links") as HTMLCollectionOf<HTMLElement>;
+        
+    //     // Set the first link to active by default
+    //     if (links.length > 0) {
+    //       links[0].className += " activeclass";
+    //     }
+    
+    //     for (let i = 0; i < links.length; i++) {
+    //       links[i].addEventListener("click", function() {
+    //         // Remove the active class from all links
+    //         const currentActive = document.getElementsByClassName("activeclass") as HTMLCollectionOf<HTMLElement>;
+    //         if (currentActive.length > 0) {
+    //           currentActive[0].className = currentActive[0].className.replace(" activeclass", "");
+    //         }
+    
+    //         // Add the active class to the clicked link
+    //         this.className += " activeclass";
+    //         console.log(this);
+    //       });
+    //     }
+    //   }
+    // }, []);
+    
+
+    useEffect(() => {
+      const navLinks = document.getElementById("navLinks");
+      if (navLinks) {
+        const links = navLinks.getElementsByClassName("links") as HTMLCollectionOf<HTMLElement>;
+    
+        // Set the first link to active by default
+        if (links.length > 0) {
+          links[0].classList.add("activeclass");
+        }
+    
+        for (let i = 0; i < links.length; i++) {
+          links[i].addEventListener("click", function() {
+            // Remove the active class from all links
+            for (let j = 0; j < links.length; j++) {
+              links[j].classList.remove("activeclass");
+            }
+    
+            // Add the active class to the clicked link
+            this.classList.add("activeclass");
+            console.log(this);
+          });
+        }
+      }
+    }, []);
+    
+
+
   return (
     <>
       <Navbar />
 
-      <div className="stickyNav max-sm:hidden">
+      <div className="stickyNav max-sm:hidden" id="navLinks">
         <div className="flex justify-between lg:pr-24 text-sm top-0 navbarcustomstyle shadow-nav-shadow bg-white tablet:pr-2">
           <div className="align-center lg:pl-28 flex tablet:pl-2">
             <img
@@ -40,17 +120,17 @@ export default function WelcomeDashboard() {
               className="w-28 h-14 pr-3 cursor-pointer tablet:pr-0"
             />
             <ul className="list-none flex unorderedList pt-4 mb-1 space-between lg:text-lg text-xs text-center tablet:text-base tablet:justify-normal">
-              <li className="text-active activeclass">Home</li>{" "}
+              <li className="links">Home</li>{" "}
               {/* tablet:mr-2 tablet:pr-0 */}
-              <li className="borderbottom ">About</li>
+              <li className=" links">About</li>
               {/* tablet:mr-2 */}
-              <li className="borderbottom ">Products</li>
+              <li className=" links">Products</li>
               {/* tablet:mr-2 */}
-              <li className="borderbottom ">Conversions</li>
+              <li className=" links">Conversions</li>
               {/* tablet:mr-2 */}
-              <li className="borderbottom ">Open an account</li>
+              <li className=" links">Open an account</li>
               {/* tablet:mr-2 */}
-              <li className="borderbottom ">Contact us</li>
+              <li className=" links">Contact us</li>
               {/* tablet:mr-2 */}
             </ul>
           </div>
@@ -62,9 +142,24 @@ export default function WelcomeDashboard() {
         </div>
       </div>
 
-      <div className="banner">
+      
 
-      </div>
+      {/* <div className="banner">
+
+      </div> */}
+
+      
+      <Carousel fade className="carouselControl customAnimation">
+        <Carousel.Item>
+          <img src={banner} alt="First slide" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src={serviceBanner} alt="Second slide" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src={transactionproofBanner} alt="Third slide" />
+        </Carousel.Item>
+      </Carousel>
       
       <div className="flexbox max-sm:hidden">
         <div className="left">
