@@ -62,10 +62,41 @@
   padding-top: 2px;
 }
 
-.offersPercent {
-  margin-top: -20px;
-  margin-left: 267px !important;
-  padding: 1px;
+.customOffer2 {
+  width: 100%;
+  height: 200px;
+ background-image: url(../src//assets//bills.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+
+.currencyConversion {
+  width: 100%;
+  height: 200px;
+ background-image: url(../src//assets//currency.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+.deposit {
+  width: 100%;
+  height: 200px;
+ background-image: url(../src//assets//deposit.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+.transfer {
+  width: 100%;
+  height: 200px;
+ background-image: url(../src//assets//transfer.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
 }
 
 .unorderedList {
@@ -177,12 +208,6 @@
   width: 18rem !important;
 }
 
-.swiftpt{
-  top: 0;
-  padding-top: 0;
-  margin-top: -120px !important;
-  margin-bottom: 0px;
-}
 
 .cardContainer {
   margin: auto;
@@ -222,7 +247,6 @@
 }
 
 @media only screen and (max-width: 600px){ 
-  
 .banner{
   height: 80vh;
  }
@@ -230,14 +254,6 @@
   .breakout {
     width: 180px;
   }
-  
-.customOffer {
-  margin-left: 212px !important;
-}
-
-.offersPercent {
-  margin-left: 196px !important;
-}
 
 .whatWePresent{
   max-width: 850px;
@@ -254,26 +270,8 @@
 }
  }
 
-@media only screen and (min-width: 375px){  
-.customOffer {
-  margin-left: 263px !important;
-}
 
-.offersPercent {
-  margin-left: 248px !important;
-}
-
- }
-
-@media only screen and (min-width: 425px){  
-.customOffer {
-  margin-left: 308px !important;
-}
-
-.offersPercent {
-  margin-left: 293px !important;
-}
-
+@media only screen and (min-width: 425px){
 .whatWePresent p:first-of-type{
   max-width: 300px;
   margin: auto;
@@ -287,95 +285,25 @@
     font-weight: 400;
   }
 
-.customOffer {
-  margin-left: 164px !important;
-  margin-top: -48px;
-  font-size: 20px !important;
-  padding-top: 2px;
-  width: 56px;
-}
-
-.customOffer p{
-  padding: 0;
-  margin-top: 0;
-}
-
-.offersPercent {
-  margin-top: -20px;
-  margin-left: 148px !important;
-  padding: 1px;
-  font-size: 20px !important;
-  width: 56px;
-  padding-top: 2px;
-  }
-
-  
-.offersPercent p{
-  padding: 0;
-  margin-bottom: 10px;
-}
   
   .whatWePresent p:first-of-type{
     max-width: 300px;
     margin: auto;
   }
-  
-.swiftpt{
-  margin-top: -140px !important;
-  margin-bottom: 0;
-  padding-bottom: 0px;
-}
 
  }
  
- @media only screen and (min-width: 1024px){  
-   .customOffer {
-     margin-top: -48px;
-     margin-left: 307px !important;
-     padding-top: 2px;
-   }
-   
-   .offersPercent {
-     margin-top: -20px;
-     margin-left: 291px !important;
-     padding: 1px;
-   }
-
+ @media only screen and (min-width: 1024px){
    .fadingCard .border-bottom{
     padding: 0px !important;
     margin: 0px !important;
    }
    
-.swiftpt{
-  margin-top: -115px !important;
-}
-  }
- 
- @media only screen and (min-width: 1440px){  
-   .customOffer {
-     margin-top: -48px;
-     margin-left: 358px !important;
-     padding-top: 2px;
+   .border-bottom{
+    padding-bottom: 25px !important;
+    margin-bottom: 25px !important;
    }
    
-   .offersPercent {
-     margin-top: -20px;
-     margin-left: 342px !important;
-     padding: 1px;
-   }
   }
  
- @media only screen and (min-width: 2560px){  
-   .customOffer {
-     margin-top: -48px;
-     margin-left: 680px !important;
-     padding-top: 2px;
-   }
-   
-   .offersPercent {
-     margin-top: -20px;
-     margin-left: 665px !important;
-     padding: 1px;
-   }
-  }
 

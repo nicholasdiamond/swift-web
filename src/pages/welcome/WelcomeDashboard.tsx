@@ -10,10 +10,6 @@ import reward from "../../assets/award_star.png";
 import seamless from "../../assets/view_cozy.png";
 import integration from "../../assets/settings_input_antenna.png";
 import excitingOffer from "../../assets/excitingOffer.png";
-import bills from "../../assets/bills.png";
-import currency from "../../assets/currency.png";
-import deposit from "../../assets/deposit.png";
-import transfer from "../../assets/transfer.png";
 import fast from "../../assets/bolt.png";
 import scan1 from "../../assets/scan1.png";
 import scanner from "../../assets/code_scanner.png";
@@ -141,13 +137,7 @@ export default function WelcomeDashboard() {
           </div>
         </div>
       </div>
-
       
-
-      {/* <div className="banner">
-
-      </div> */}
-
       
       <Carousel fade className="carouselControl customAnimation">
         <Carousel.Item>
@@ -425,93 +415,128 @@ export default function WelcomeDashboard() {
         </div>
         <div className="flex justify-center flex-wrap pl-0 gap-4 pt-0">
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
-            <Card.Img variant="top" src={bills} />
-            <div className="customOffer text-end bg-white w-20">
-              <p className="text-center text-2xl pt-1 font-medium text-active tablet:text-lg">
+            {/* <Card.Img variant="top" src={bills} /> */}
+            <div className="customOffer2 flex  justify-between bg-white w-20">
+              <div></div>
+              <div className="flex flex-col justify-between">
+                <div></div>
+              <p className="mb-0 bg-white p-1  text-2xl pt-1 font-medium text-active tablet:text-lg">
                 FAST
               </p>
+              </div>
             </div>
-            <Card.Body>
-              <div className="text-end offersPercent bg-active w-20 ">
-                <p className="text-center text-2xl pt-1 text-white font-medium tablet:text-lg">
+
+            {/* CARD BODY */}
+            <div>
+            <div className="flex justify-between ">
+                <div></div>
+                <p className="text-center p-1 bg-active text-2xl text-white font-medium tablet:text-lg">
                   100%
                 </p>
               </div>
+
               <Card.Title className="bold center texttitle">
                 PAY BILLS
               </Card.Title>
-              <Card.Text className="textcolor">
+              <Card.Text className="textcolor pl-3 pb-2">
                 We cover a wide range bill payment ranging from airtime
                 recharge, internet subscription, travel tickets, cable recharge,
                 electricity top-up e.t.c
               </Card.Text>
-            </Card.Body>
+            </div>
           </Card>
+          
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
-            <Card.Img variant="top" src={currency} />
-            <div className="customOffer text-end bg-white w-20">
-              <p className="text-center text-2xl pt-1 font-medium text-active tablet:text-lg">
+            {/* <Card.Img variant="top" src={currency} /> */}
+            <div className="currencyConversion flex justify-between text-end w-20">
+              <div></div>
+              <div className="flex flex-col justify-between">
+                <div></div>
+                <div>
+                  <p className="mb-0 bg-white p-1 text-2xl pt-1 font-medium text-active tablet:text-lg">
                 RATE
               </p>
+                </div>
+              </div>
             </div>
-            <Card.Body>
-              <div className="text-end offersPercent bg-active w-20 ">
-                <p className="text-center text-2xl pt-1 text-white font-medium tablet:text-lg">
+
+            {/* Card Body */}
+            <div>
+              <div className="flex justify-between">
+                <div></div>
+                  <p className="text-center text-2xl p-1 bg-active text-white font-medium tablet:text-lg">
                   100%
                 </p>
+                
               </div>
-              <Card.Title className="bold center texttitle">
+              <Card.Title className="bold center texttitle pl-3">
                 CURRENCY CONVERSION
               </Card.Title>
-              <Card.Text className="textcolor">
+              <Card.Text className="textcolor pl-3 pb-2">
                 Get a better rate conversion with us on all currency exchange
                 and do more with your forex to local conversions
               </Card.Text>
-            </Card.Body>
+            </div>
           </Card>
+
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
-            <Card.Img variant="top" src={deposit} />
-            <div className="customOffer text-end bg-white w-20">
-              <p className="text-center text-2xl pt-1 font-medium text-active tablet:text-lg">
+            {/* <Card.Img variant="top" src={deposit} /> */}
+            <div className="deposit flex justify-between text-end w-20">
+              <div></div>
+              <div className="flex flex-col justify-between">
+                <div></div>
+                <p className="mb-0 bg-white p-1 text-2xl pt-1 font-medium text-active tablet:text-lg">
                 SAFE
               </p>
+              </div>
             </div>
-            <Card.Body>
-              <div className="text-end offersPercent bg-active  w-20 ">
-                <p className="text-center text-2xl pt-1 text-white font-medium tablet:text-lg">
+
+            {/* Card Body */}
+            <div>
+              <div className="flex justify-between ">
+                <div></div>
+                <p className="text-center text-2xl p-1 bg-active text-white font-medium tablet:text-lg">
                   100%
                 </p>
               </div>
               <Card.Title className="bold center texttitle">DEPOSIT</Card.Title>
-              <Card.Text className="textcolor">
+              <Card.Text className="textcolor pl-3 pb-2 pr-1.5">
                 Reliably save with Swiftpoint for fulfilling your money
                 objectives like building a savings, expenditure motives and
                 investment related decisions
               </Card.Text>
-            </Card.Body>
+            </div>
           </Card>
+
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
-            <Card.Img variant="top" src={transfer} />
-            <div className="customOffer text-end bg-white">
-              <p className="text-center text-2xl pt-1 font-medium text-active tablet:text-lg">
+            {/* <Card.Img variant="top" src={transfer} /> */}
+            <div className="transfer flex justify-between text-end">
+              <div></div>
+              <div className="flex flex-col justify-between">
+                <div></div>
+                <p className="mb-0 bg-white text-xl p-1 font-medium text-active tablet:text-lg">
                 SWIFT
               </p>
+              </div>
             </div>
-            <Card.Body>
-              <div className="text-end offersPercent max-sm:w-20 bg-active w-20">
-                <p className="text-center text-2xl pt-1 text-white font-medium tablet:text-lg">
+
+            {/* Card Body */}
+            <div>
+              <div className="flex justify-between">
+                <div></div>
+                <p className="text-center p-1.5 text-2xl pt-1 bg-active text-white font-medium tablet:text-lg">
                   100%
                 </p>
               </div>
               <Card.Title className="bold center texttitle">
                 TRANSFER
               </Card.Title>
-              <Card.Text className="textcolor">
+              <Card.Text className="textcolor pl-3 pb-2 pr-1">
                 Seamlessly send funds to other Swiftpoint users around you
                 without hassle and get a considerable fee charge on each
                 transfer
               </Card.Text>
-            </Card.Body>
+            </div>
           </Card>
         </div>
       </div>
@@ -658,7 +683,7 @@ export default function WelcomeDashboard() {
                   </Card.Body>
                   <Card.Body>
                     <Card.Title className="bold lg:pt-3 lg:pb-3 tablet:pt-2 tablet:pb-1">Privacy</Card.Title>
-                    <Card.Text className="border-bottom lg:pb-4 lg:mb-4 tablet:pb-3">
+                    <Card.Text className="border-bottom ">
                       Our authentication process is built safely to secure your
                       account with us and ensure payouts request users consent
                       before transaction processing
@@ -686,7 +711,7 @@ export default function WelcomeDashboard() {
                     <Card.Title className="bold lg:pt-3 lg:pb-3 tablet:pt-2 tablet:pb-1">
                       International wallets
                     </Card.Title>
-                    <Card.Text className="border-bottom lg:pb-4 lg:mb-4 tablet:pb-3">
+                    <Card.Text className="border-bottom ">
                       We represent good exchange rate and swift conversion of
                       currencies in all countries as to users desired interest
                     </Card.Text>
@@ -711,7 +736,7 @@ export default function WelcomeDashboard() {
                   </Card.Body>
                   <Card.Body>
                     <Card.Title className="bold lg:pt-3 lg:pb-3 tablet:pt-2 tablet:pb-1">Seamless UI</Card.Title>
-                    <Card.Text className="border-bottom lg:pb-4 lg:mb-4 tablet:pb-3">
+                    <Card.Text className="border-bottom ">
                       We serve you at best with our services and app environment
                       by making all user interfaces best fit for users experince
                     </Card.Text>
