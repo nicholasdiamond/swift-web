@@ -683,7 +683,7 @@ export default function WelcomeDashboard() {
                   </Card.Body>
                   <Card.Body>
                     <Card.Title className="bold lg:pt-3 lg:pb-3 tablet:pt-2 tablet:pb-1">Privacy</Card.Title>
-                    <Card.Text className="border-bottom ">
+                    <Card.Text className="border-bottom lg:mb-6">
                       Our authentication process is built safely to secure your
                       account with us and ensure payouts request users consent
                       before transaction processing
@@ -711,7 +711,7 @@ export default function WelcomeDashboard() {
                     <Card.Title className="bold lg:pt-3 lg:pb-3 tablet:pt-2 tablet:pb-1">
                       International wallets
                     </Card.Title>
-                    <Card.Text className="border-bottom ">
+                    <Card.Text className="border-bottom lg:mb-6">
                       We represent good exchange rate and swift conversion of
                       currencies in all countries as to users desired interest
                     </Card.Text>
@@ -736,7 +736,7 @@ export default function WelcomeDashboard() {
                   </Card.Body>
                   <Card.Body>
                     <Card.Title className="bold lg:pt-3 lg:pb-3 tablet:pt-2 tablet:pb-1">Seamless UI</Card.Title>
-                    <Card.Text className="border-bottom ">
+                    <Card.Text className="border-bottom lg:mb-6">
                       We serve you at best with our services and app environment
                       by making all user interfaces best fit for users experince
                     </Card.Text>
