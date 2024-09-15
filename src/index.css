@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  font-family: "Inter" !important;
+}
+
+.navbarcustomstyle {
+  z-index: 999;
+}
+
+.border {
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.border-bottom {
+  padding-bottom: 12px !important;
+  border-bottom: 1px solid #757575;
+  margin-bottom: 5px;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.top {
+  margin-top: -10px;
+}
+
+.carouselControl {
+  z-index: 0 !important;
+}
+
+.carouselControl a {
+  display: none !important;
+}
+
+.links {
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  border-bottom: 1px solid white;
+  border-bottom-width: 5%;
+}
+
+.links:hover {
+  border-bottom: 1px solid lightblue;
+  border-bottom-width: 5%;
+}
+
+.customOffer {
+  margin-top: -48px;
+  margin-left: 282px !important;
+  padding-top: 2px;
+}
+
+.customOffer2 {
+  width: 100%;
+  height: 200px;
+ background-image: url(../src//assets//bills.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+
+.currencyConversion {
+  width: 100%;
+  height: 200px;
+ background-image: url(../src//assets//currency.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+.deposit {
+  width: 100%;
+  height: 200px;
+ background-image: url(../src//assets//deposit.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+.transfer {
+  width: 100%;
+  height: 200px;
+ background-image: url(../src//assets//transfer.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+.unorderedList {
+  padding-left: 5px;
+}
+
+.unorderedList li {
+  font-size: 14px !important;
+  margin-left: 14px !important;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.activeclass {
+  font-weight: 500 !important;
+  color: #3bb9f1;
+  border-bottom: none !important;
+}
+
+.stickyNav {
+  height: 10vh;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
+
+.navbar button {
+  font-size: 14px;
+}
+
+.flexbox {
+  display: flex;
+  width: 63%;
+  margin: auto;
+}
+
+.left {
+  width: 85%;
+}
+
+.right {
+  width: 15%;
+  margin-left: -100px;
+}
+
+.right img {
+  height: 540px;
+}
+
+.breakout {
+  width: 300px;
+}
+
+.cardSection {
+  max-width: 72%;
+}
+
+.textcolor {
+  color: #717171;
+}
+
+.texttitle {
+  color: #202220;
+}
+
+.banner{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./assets/welcomeBanner.png);
+  transition: background-image 1s;
+
+  animation-name: animate;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+  0%, 33% {
+    background-image: url(./assets/welcomeBanner.png);
+    opacity: 1;
+  }
+  33%, 66% {
+    background-image: url(./assets/servicesBanner.png);
+    opacity: 1;
+  }
+  66%, 100% {
+    background-image: url(./assets/transactionproofBanner.png);
+    opacity: 1;
+  }
+}
+
+.getOnboard{
+  max-width: 800px;
+}
+
+.whatWePresent{
+  max-width: 850px;
+  height: 690px;
+}
+
+.cardWidth{
+  width: 18rem !important;
+}
+
+.swiftpt{
+  top: 0;
+  padding-top: 0;
+  /* margin-top: -120px !important; */
+  margin-bottom: 0px;
+}
+
+.cardContainer {
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+}
+
+.fadingCard {
+  animation: fade 20s linear infinite forwards;
+  opacity:0;
+}
+.fadingCard1,.fadingCard2 {
+  margin-right: -100%;
+}
+.fadingCard2 {animation-delay:6.6666s;}
+.fadingCard3 {animation-delay:13.3333s;}
+
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 1;
+  }
+  31% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+}
+
+.paragraph{
+  margin: 0 !important;
+  text-wrap: nowrap;
+}
+
+@media only screen and (max-width: 600px){ 
+.banner{
+  height: 80vh;
+ }
+  
+  .breakout {
+    width: 180px;
+  }
+
+.whatWePresent{
+  max-width: 850px;
+  height: 1400px;
+}
+
+.paragraph{
+  text-align: center;
+  text-wrap: wrap;
+}
+
+.border-bottom {
+  margin-bottom: 15px !important;
+}
+ }
+
+
+@media only screen and (min-width: 425px){
+.whatWePresent p:first-of-type{
+  max-width: 300px;
+  margin: auto;
+}
+
+ }
+ 
+ @media only screen and (min-width: 768px){
+  .texttitle{
+    font-size: 20px !important;
+    font-weight: 400;
+  }
+
+  
+  .whatWePresent p:first-of-type{
+    max-width: 300px;
+    margin: auto;
+  }
+  
+.swiftpt{
+  margin-top: -140px !important;
+  margin-bottom: 0;
+  padding-bottom: 0px;
+}
+
+ }
+ 
+ @media only screen and (min-width: 1024px){
+   .fadingCard .border-bottom{
+    padding: 0px !important;
+    margin: 0px !important;
+    padding-bottom: 25px !important;
+   }
+   
+.swiftpt{
+  margin-top: -115px !important;
+}
+  }
+ 
+
