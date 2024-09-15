@@ -25,7 +25,7 @@ import footerlogo from "../../assets/welcomeNavLogo.png";
 import Card from "react-bootstrap/Card";
 import { IoMdCheckmark } from "react-icons/io";
 import { Carousel } from "react-bootstrap";
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 export default function WelcomeDashboard() {
     // useEffect(() => {
