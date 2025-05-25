@@ -139,9 +139,9 @@ export default function WelcomeDashboard() {
         <Carousel.Item>
           <img src={banner} alt="First slide" />
         </Carousel.Item>
-        {/* <Carousel.Item>
-          <img src={serviceBanner} alt="Second slide" />
-        </Carousel.Item> */}
+        <Carousel.Item>
+          <img src={banner} alt="Second slide" />
+        </Carousel.Item>
         <Carousel.Item>
           <img src={transactionproofBanner} alt="Third slide" />
         </Carousel.Item>
