@@ -25,83 +25,81 @@ import footerlogo from "../../assets/welcomeNavLogo.png";
 import Card from "react-bootstrap/Card";
 import { IoMdCheckmark } from "react-icons/io";
 import { Carousel } from "react-bootstrap";
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 export default function WelcomeDashboard() {
-    // useEffect(() => {
-    //   const navLinks = document.getElementById("navLinks");
-    //   if (navLinks) {
-    //     const links = navLinks.getElementsByClassName("links") as HTMLCollectionOf<HTMLElement>;
-    //     for (let i = 0; i < links.length; i++) {
-    //       links[i].addEventListener("click", function() {
-    //         // Remove the active class from all links
-    //         const currentActive = document.getElementsByClassName("activeclass") as HTMLCollectionOf<HTMLElement>;
-    //         if (currentActive.length > 0) {
-    //           currentActive[0].className = currentActive[0].className.replace(" activeclass", "");
-    //         }
-    //         // Add the active class to the clicked link
-    //         this.className += " activeclass";
-    //         console.log(this);
-            
-    //       });
-    //     }
-    //   }
-    // }, []);
+  // useEffect(() => {
+  //   const navLinks = document.getElementById("navLinks");
+  //   if (navLinks) {
+  //     const links = navLinks.getElementsByClassName("links") as HTMLCollectionOf<HTMLElement>;
+  //     for (let i = 0; i < links.length; i++) {
+  //       links[i].addEventListener("click", function() {
+  //         // Remove the active class from all links
+  //         const currentActive = document.getElementsByClassName("activeclass") as HTMLCollectionOf<HTMLElement>;
+  //         if (currentActive.length > 0) {
+  //           currentActive[0].className = currentActive[0].className.replace(" activeclass", "");
+  //         }
+  //         // Add the active class to the clicked link
+  //         this.className += " activeclass";
+  //         console.log(this);
 
+  //       });
+  //     }
+  //   }
+  // }, []);
 
-    // useEffect(() => {
-    //   const navLinks = document.getElementById("navLinks");
-    //   if (navLinks) {
-    //     const links = navLinks.getElementsByClassName("links") as HTMLCollectionOf<HTMLElement>;
-        
-    //     // Set the first link to active by default
-    //     if (links.length > 0) {
-    //       links[0].className += " activeclass";
-    //     }
-    
-    //     for (let i = 0; i < links.length; i++) {
-    //       links[i].addEventListener("click", function() {
-    //         // Remove the active class from all links
-    //         const currentActive = document.getElementsByClassName("activeclass") as HTMLCollectionOf<HTMLElement>;
-    //         if (currentActive.length > 0) {
-    //           currentActive[0].className = currentActive[0].className.replace(" activeclass", "");
-    //         }
-    
-    //         // Add the active class to the clicked link
-    //         this.className += " activeclass";
-    //         console.log(this);
-    //       });
-    //     }
-    //   }
-    // }, []);
-    
+  // useEffect(() => {
+  //   const navLinks = document.getElementById("navLinks");
+  //   if (navLinks) {
+  //     const links = navLinks.getElementsByClassName("links") as HTMLCollectionOf<HTMLElement>;
 
-    useEffect(() => {
-      const navLinks = document.getElementById("navLinks");
-      if (navLinks) {
-        const links = navLinks.getElementsByClassName("links") as HTMLCollectionOf<HTMLElement>;
-    
-        // Set the first link to active by default
-        if (links.length > 0) {
-          links[0].classList.add("activeclass");
-        }
-    
-        for (let i = 0; i < links.length; i++) {
-          links[i].addEventListener("click", function() {
-            // Remove the active class from all links
-            for (let j = 0; j < links.length; j++) {
-              links[j].classList.remove("activeclass");
-            }
-    
-            // Add the active class to the clicked link
-            this.classList.add("activeclass");
-            console.log(this);
-          });
-        }
+  //     // Set the first link to active by default
+  //     if (links.length > 0) {
+  //       links[0].className += " activeclass";
+  //     }
+
+  //     for (let i = 0; i < links.length; i++) {
+  //       links[i].addEventListener("click", function() {
+  //         // Remove the active class from all links
+  //         const currentActive = document.getElementsByClassName("activeclass") as HTMLCollectionOf<HTMLElement>;
+  //         if (currentActive.length > 0) {
+  //           currentActive[0].className = currentActive[0].className.replace(" activeclass", "");
+  //         }
+
+  //         // Add the active class to the clicked link
+  //         this.className += " activeclass";
+  //         console.log(this);
+  //       });
+  //     }
+  //   }
+  // }, []);
+
+  useEffect(() => {
+    const navLinks = document.getElementById("navLinks");
+    if (navLinks) {
+      const links = navLinks.getElementsByClassName(
+        "links"
+      ) as HTMLCollectionOf<HTMLElement>;
+
+      // Set the first link to active by default
+      if (links.length > 0) {
+        links[0].classList.add("activeclass");
       }
-    }, []);
-    
 
+      for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener("click", function () {
+          // Remove the active class from all links
+          for (let j = 0; j < links.length; j++) {
+            links[j].classList.remove("activeclass");
+          }
+
+          // Add the active class to the clicked link
+          this.classList.add("activeclass");
+          console.log(this);
+        });
+      }
+    }
+  }, []);
 
   return (
     <>
@@ -116,8 +114,7 @@ export default function WelcomeDashboard() {
               className="w-28 h-14 pr-3 cursor-pointer tablet:pr-0"
             />
             <ul className="list-none flex unorderedList pt-4 mb-1 space-between lg:text-lg text-xs text-center tablet:text-base tablet:justify-normal">
-              <li className="links">Home</li>{" "}
-              {/* tablet:mr-2 tablet:pr-0 */}
+              <li className="links">Home</li> {/* tablet:mr-2 tablet:pr-0 */}
               <li className=" links">About</li>
               {/* tablet:mr-2 */}
               <li className=" links">Products</li>
@@ -137,20 +134,19 @@ export default function WelcomeDashboard() {
           </div>
         </div>
       </div>
-      
-      
+
       <Carousel fade className="carouselControl customAnimation">
         <Carousel.Item>
           <img src={banner} alt="First slide" />
         </Carousel.Item>
-        <Carousel.Item>
+        {/* <Carousel.Item>
           <img src={serviceBanner} alt="Second slide" />
-        </Carousel.Item>
+        </Carousel.Item> */}
         <Carousel.Item>
           <img src={transactionproofBanner} alt="Third slide" />
         </Carousel.Item>
       </Carousel>
-      
+
       <div className="flexbox max-sm:hidden">
         <div className="left">
           <div className="pt-10 z-50 max-sm:pt-10 tablet:pt-20">
@@ -192,7 +188,9 @@ export default function WelcomeDashboard() {
                   <img src={reliable} alt="reliable" className="p-3" />
                 </Card.Body>
                 <Card.Body>
-                  <Card.Title className="bold tablet:text-lg">Reliable</Card.Title>
+                  <Card.Title className="bold tablet:text-lg">
+                    Reliable
+                  </Card.Title>
                   <Card.Text className="border-bottom text-sm">
                     Make payments for your cable networks with ease using our
                     platform and get best deals.
@@ -208,7 +206,9 @@ export default function WelcomeDashboard() {
                   <img src={efficient} alt="efficient" className="p-3" />
                 </Card.Body>
                 <Card.Body>
-                  <Card.Title className="bold tablet:text-lg">Efficient</Card.Title>
+                  <Card.Title className="bold tablet:text-lg">
+                    Efficient
+                  </Card.Title>
                   <Card.Text className="border-bottom text-sm">
                     Make payments for your cable networks with ease using our
                     platform and get best deals.
@@ -224,7 +224,9 @@ export default function WelcomeDashboard() {
                   <img src={reward} alt="reward" className="p-3" />
                 </Card.Body>
                 <Card.Body>
-                  <Card.Title className="bold tablet:text-lg">Reward</Card.Title>
+                  <Card.Title className="bold tablet:text-lg">
+                    Reward
+                  </Card.Title>
                   <Card.Text className="border-bottom text-sm">
                     Make payments for your cable networks with ease using our
                     platform and get best deals.
@@ -283,26 +285,27 @@ export default function WelcomeDashboard() {
           <div>
             <div className="max-sm:flex justify-center">
               <div className="pt-5">
-              <p className="text-3xl w-9/12 font-medium leading-9 pb-10 max-sm:text-base max-sm:pb-2 text-nowrap">
-                Break out from <br /> slow and insecure <br /> transactions <br /> with our{" "}
-                <span className="font-bold text-3xl text-swift-span max-sm:text-xl">
-                  Swift, <br />
-                </span>{" "}
-                <span className="font-bold text-3xl text-active max-sm:text-xl">
-                  Reliable
-                </span>{" "}
-                and{" "} <br />
-                <span className="font-bold text-3xl text-swift-span max-sm:text-xl">
-                  Secure <br />
-                </span>{" "}
-                payment platform
-              </p>
+                <p className="text-3xl w-9/12 font-medium leading-9 pb-10 max-sm:text-base max-sm:pb-2 text-nowrap">
+                  Break out from <br /> slow and insecure <br /> transactions{" "}
+                  <br /> with our{" "}
+                  <span className="font-bold text-3xl text-swift-span max-sm:text-xl">
+                    Swift, <br />
+                  </span>{" "}
+                  <span className="font-bold text-3xl text-active max-sm:text-xl">
+                    Reliable
+                  </span>{" "}
+                  and <br />
+                  <span className="font-bold text-3xl text-swift-span max-sm:text-xl">
+                    Secure <br />
+                  </span>{" "}
+                  payment platform
+                </p>
+              </div>
+              <div className="breakout">
+                <img src={breakOut} alt="breakOut" />
+              </div>
             </div>
-            <div className="breakout">
-            <img src={breakOut} alt="breakOut" />
-          </div>
-            </div>
-            
+
             <div className="flex justify-center mb-8 gap-3 flex-wrap">
               <Card className="border shadow-card-shadow max-sm:w-11/12 mobile-M:pb-5">
                 <Card.Body className="bg-active max-sm:h-40 center">
@@ -386,7 +389,11 @@ export default function WelcomeDashboard() {
               </Card>
               <Card className="border shadow-card-shadow max-sm:w-11/12 mobile-M:pb-5">
                 <Card.Body className="bg-active max-sm:h-40 center">
-                  <img src={integration} alt="integration" className="p-4 w-28" />
+                  <img
+                    src={integration}
+                    alt="integration"
+                    className="p-4 w-28"
+                  />
                 </Card.Body>
                 <Card.Body>
                   <Card.Title className="bold">Integrations</Card.Title>
@@ -420,15 +427,15 @@ export default function WelcomeDashboard() {
               <div></div>
               <div className="flex flex-col justify-between">
                 <div></div>
-              <p className="mb-0 bg-white p-1  text-2xl pt-1 font-medium text-active tablet:text-lg">
-                FAST
-              </p>
+                <p className="mb-0 bg-white p-1  text-2xl pt-1 font-medium text-active tablet:text-lg">
+                  FAST
+                </p>
               </div>
             </div>
 
             {/* CARD BODY */}
             <div>
-            <div className="flex justify-between ">
+              <div className="flex justify-between ">
                 <div></div>
                 <p className="text-center p-1 bg-active text-2xl text-white font-medium tablet:text-lg">
                   100%
@@ -445,7 +452,7 @@ export default function WelcomeDashboard() {
               </Card.Text>
             </div>
           </Card>
-          
+
           <Card className="w-2/5 h-11/12 border shadow-card-shadow max-sm:w-11/12">
             {/* <Card.Img variant="top" src={currency} /> */}
             <div className="currencyConversion flex justify-between text-end w-20">
@@ -454,8 +461,8 @@ export default function WelcomeDashboard() {
                 <div></div>
                 <div>
                   <p className="mb-0 bg-white p-1 text-2xl pt-1 font-medium text-active tablet:text-lg">
-                RATE
-              </p>
+                    RATE
+                  </p>
                 </div>
               </div>
             </div>
@@ -464,10 +471,9 @@ export default function WelcomeDashboard() {
             <div>
               <div className="flex justify-between">
                 <div></div>
-                  <p className="text-center text-2xl p-1 bg-active text-white font-medium tablet:text-lg">
+                <p className="text-center text-2xl p-1 bg-active text-white font-medium tablet:text-lg">
                   100%
                 </p>
-                
               </div>
               <Card.Title className="bold center texttitle pl-3">
                 CURRENCY CONVERSION
@@ -486,8 +492,8 @@ export default function WelcomeDashboard() {
               <div className="flex flex-col justify-between">
                 <div></div>
                 <p className="mb-0 bg-white p-1 text-2xl pt-1 font-medium text-active tablet:text-lg">
-                SAFE
-              </p>
+                  SAFE
+                </p>
               </div>
             </div>
 
@@ -515,8 +521,8 @@ export default function WelcomeDashboard() {
               <div className="flex flex-col justify-between">
                 <div></div>
                 <p className="mb-0 bg-white text-xl p-1 font-medium text-active tablet:text-lg">
-                SWIFT
-              </p>
+                  SWIFT
+                </p>
               </div>
             </div>
 
@@ -559,7 +565,9 @@ export default function WelcomeDashboard() {
                 alt="scanner"
                 className="w-48 max-sm:w-32 max-sm:pl-20 max-sm:pb-1 lg:pl-20 lg:pb-3  mobile-M:w-44 mobile-M:pl-28 mobile-M:pb-3 mobile-L:w-48 mobile-L:pl-32 tablet:pl-14 tablet:w-28 lg:w-36"
               />
-              <h2 className="font-bold max-sm:pb-0 text-2xl max-sm:mb-0">Scan</h2>
+              <h2 className="font-bold max-sm:pb-0 text-2xl max-sm:mb-0">
+                Scan
+              </h2>
               <p className="text-sm">
                 Get our mobile app on apple and google playstore by scanning
                 this barcode and start experiencing swift payments on all bills
@@ -579,7 +587,9 @@ export default function WelcomeDashboard() {
                 alt="download"
                 className="w-48 max-sm:w-32 max-sm:pl-20 max-sm:pb-1 lg:pl-20 lg:pb-3  mobile-M:w-44 mobile-M:pl-28 mobile-M:pb-3 mobile-L:w-48 mobile-L:pl-32 tablet:pl-14 tablet:w-28 lg:w-36"
               />
-              <h2 className="font-bold max-sm:pb-0 text-2xl max-sm:mb-0">Download</h2>
+              <h2 className="font-bold max-sm:pb-0 text-2xl max-sm:mb-0">
+                Download
+              </h2>
               <p className="text-sm">
                 Install our mobile app on your device after scanning and you are
                 on flight for swift transactions
@@ -598,7 +608,9 @@ export default function WelcomeDashboard() {
                 alt="register"
                 className="w-48 max-sm:w-32 max-sm:pl-20 max-sm:pb-1 lg:pl-20 lg:pb-3  mobile-M:w-44 mobile-M:pl-28 mobile-M:pb-3 mobile-L:w-48 mobile-L:pl-32 tablet:pl-14 tablet:w-28 lg:w-36"
               />
-              <h2 className="font-bold max-sm:pb-0 text-2xl max-sm:mb-0">Register</h2>
+              <h2 className="font-bold max-sm:pb-0 text-2xl max-sm:mb-0">
+                Register
+              </h2>
               <p className="text-sm">
                 Now we need to know you by filling our simple form for KYC to
                 ensure authenti- cations and security on how platform
@@ -609,8 +621,10 @@ export default function WelcomeDashboard() {
       </div>
 
       <div className=" whatWePresent m-auto pt-20 pb-0 mobile-M:pt-8 mobile-M:pb-8   tablet:pl-8 ">
-        <p className="font-bold justify-start text-3xl pb-5 mobile-M:pb-2 mobile-M:pl-0 
-        max-sm:block max-sm:pb-2 max-sm:pl-10 paragraph">
+        <p
+          className="font-bold justify-start text-3xl pb-5 mobile-M:pb-2 mobile-M:pl-0 
+        max-sm:block max-sm:pb-2 max-sm:pl-10 paragraph"
+        >
           What we represent @Swiftpoint<span className="text-red-700 "> ?</span>
         </p>
         <div className="2xl:hidden  md:hidden  lg:hidden  xl:hidden max-sm:flex max-sm:flex-wrap max-sm:justify-center max-sm:h-screen">
@@ -632,7 +646,6 @@ export default function WelcomeDashboard() {
                 </p>
               </Card.Body>
             </Card>
-          
           </div>
           <div>
             <Card className="w-11/12 border h-5/6 shadow-privacy-shadow mb-3 m-auto">
@@ -672,17 +685,22 @@ export default function WelcomeDashboard() {
           </div>
         </div>
 
-        
         <div className="cardContainer max-sm:hidden tablet:pt-5">
-  <div className="fadingCard fadingCard1">
-    <div className="flex">
+          <div className="fadingCard fadingCard1">
+            <div className="flex">
               <div>
                 <Card className="lg:w-96 border h-5/6 shadow-privacy-shadow tablet:w-72 tablet:h-4/6">
                   <Card.Body className="bg-active h-2/5 center">
-                    <img src={lock} alt="fast" className="p-8 w-40 max-tablet:p-0 max-tablet:w-20" />
+                    <img
+                      src={lock}
+                      alt="fast"
+                      className="p-8 w-40 max-tablet:p-0 max-tablet:w-20"
+                    />
                   </Card.Body>
                   <Card.Body>
-                    <Card.Title className="bold lg:pt-3 lg:pb-3 tablet:pt-2 tablet:pb-1">Privacy</Card.Title>
+                    <Card.Title className="bold lg:pt-3 lg:pb-3 tablet:pt-2 tablet:pb-1">
+                      Privacy
+                    </Card.Title>
                     <Card.Text className="border-bottom lg:mb-6">
                       Our authentication process is built safely to secure your
                       account with us and ensure payouts request users consent
@@ -696,16 +714,24 @@ export default function WelcomeDashboard() {
                 </Card>
               </div>
               <div>
-                <img src={swiftP1} alt="swift point" className="swiftpt h-full" />
+                <img
+                  src={swiftP1}
+                  alt="swift point"
+                  className="swiftpt h-full"
+                />
               </div>
             </div>
-  </div>
-  <div className="fadingCard fadingCard2">
-   <div className="flex">
+          </div>
+          <div className="fadingCard fadingCard2">
+            <div className="flex">
               <div>
                 <Card className="lg:w-96 border h-5/6 shadow-privacy-shadow tablet:w-72 tablet:h-4/6">
                   <Card.Body className="bg-active h-2/5 center">
-                    <img src={lock} alt="fast" className="p-8 w-40 max-tablet:p-0 max-tablet:w-20" />
+                    <img
+                      src={lock}
+                      alt="fast"
+                      className="p-8 w-40 max-tablet:p-0 max-tablet:w-20"
+                    />
                   </Card.Body>
                   <Card.Body>
                     <Card.Title className="bold lg:pt-3 lg:pb-3 tablet:pt-2 tablet:pb-1">
@@ -723,19 +749,29 @@ export default function WelcomeDashboard() {
                 </Card>
               </div>
               <div>
-                <img src={swiftP2} alt="swift point" className="swiftpt h-full" />
+                <img
+                  src={swiftP2}
+                  alt="swift point"
+                  className="swiftpt h-full"
+                />
               </div>
             </div>
-  </div>
-  <div className="fadingCard fadingCard3">
-    <div className="flex">
+          </div>
+          <div className="fadingCard fadingCard3">
+            <div className="flex">
               <div>
                 <Card className="lg:w-96 border h-5/6 shadow-privacy-shadow tablet:w-72 tablet:h-4/6">
                   <Card.Body className="bg-active h-2/5 center">
-                    <img src={lock} alt="fast" className="p-8 w-40 max-tablet:p-0 max-tablet:w-20" />
+                    <img
+                      src={lock}
+                      alt="fast"
+                      className="p-8 w-40 max-tablet:p-0 max-tablet:w-20"
+                    />
                   </Card.Body>
                   <Card.Body>
-                    <Card.Title className="bold lg:pt-3 lg:pb-3 tablet:pt-2 tablet:pb-1">Seamless UI</Card.Title>
+                    <Card.Title className="bold lg:pt-3 lg:pb-3 tablet:pt-2 tablet:pb-1">
+                      Seamless UI
+                    </Card.Title>
                     <Card.Text className="border-bottom lg:mb-6">
                       We serve you at best with our services and app environment
                       by making all user interfaces best fit for users experince
@@ -748,10 +784,14 @@ export default function WelcomeDashboard() {
                 </Card>
               </div>
               <div>
-                <img src={swiftP3} alt="swift point" className="swiftpt h-full" />
+                <img
+                  src={swiftP3}
+                  alt="swift point"
+                  className="swiftpt h-full"
+                />
               </div>
             </div>
-  </div>
+          </div>
         </div>
       </div>
 

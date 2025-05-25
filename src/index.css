@@ -65,38 +65,37 @@
 .customOffer2 {
   width: 100%;
   height: 200px;
- background-image: url(../src//assets//bills.png);
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center;
+  background-image: url(../src//assets//currency.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
 
 .currencyConversion {
   width: 100%;
   height: 200px;
- background-image: url(../src//assets//currency.png);
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center;
+  background-image: url(../src//assets//currency.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .deposit {
   width: 100%;
   height: 200px;
- background-image: url(../src//assets//deposit.png);
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center;
+  background-image: url(../src//assets//deposit.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .transfer {
   width: 100%;
   height: 200px;
- background-image: url(../src//assets//transfer.png);
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center;
+  background-image: url(../src//assets//transfer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .unorderedList {
@@ -164,7 +163,7 @@
   color: #202220;
 }
 
-.banner{
+.banner {
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -181,34 +180,37 @@
 }
 
 @keyframes animate {
-  0%, 33% {
+  0%,
+  33% {
     background-image: url(./assets/welcomeBanner.png);
     opacity: 1;
   }
-  33%, 66% {
+  33%,
+  66% {
     background-image: url(./assets/servicesBanner.png);
     opacity: 1;
   }
-  66%, 100% {
+  66%,
+  100% {
     background-image: url(./assets/transactionproofBanner.png);
     opacity: 1;
   }
 }
 
-.getOnboard{
+.getOnboard {
   max-width: 800px;
 }
 
-.whatWePresent{
+.whatWePresent {
   max-width: 850px;
   height: 690px;
 }
 
-.cardWidth{
+.cardWidth {
   width: 18rem !important;
 }
 
-.swiftpt{
+.swiftpt {
   top: 0;
   padding-top: 0;
   /* margin-top: -120px !important; */
@@ -223,14 +225,18 @@
 
 .fadingCard {
   animation: fade 20s linear infinite forwards;
-  opacity:0;
+  opacity: 0;
 }
-.fadingCard1,.fadingCard2 {
+.fadingCard1,
+.fadingCard2 {
   margin-right: -100%;
 }
-.fadingCard2 {animation-delay:6.6666s;}
-.fadingCard3 {animation-delay:13.3333s;}
-
+.fadingCard2 {
+  animation-delay: 6.6666s;
+}
+.fadingCard3 {
+  animation-delay: 13.3333s;
+}
 
 @keyframes fade {
   0% {
@@ -247,74 +253,68 @@
   }
 }
 
-.paragraph{
+.paragraph {
   margin: 0 !important;
   text-wrap: nowrap;
 }
 
-@media only screen and (max-width: 600px){ 
-.banner{
-  height: 80vh;
- }
-  
+@media only screen and (max-width: 600px) {
+  .banner {
+    height: 80vh;
+  }
+
   .breakout {
     width: 180px;
   }
 
-.whatWePresent{
-  max-width: 850px;
-  height: 1400px;
+  .whatWePresent {
+    max-width: 850px;
+    height: 1400px;
+  }
+
+  .paragraph {
+    text-align: center;
+    text-wrap: wrap;
+  }
+
+  .border-bottom {
+    margin-bottom: 15px !important;
+  }
 }
 
-.paragraph{
-  text-align: center;
-  text-wrap: wrap;
+@media only screen and (min-width: 425px) {
+  .whatWePresent p:first-of-type {
+    max-width: 300px;
+    margin: auto;
+  }
 }
 
-.border-bottom {
-  margin-bottom: 15px !important;
-}
- }
-
-
-@media only screen and (min-width: 425px){
-.whatWePresent p:first-of-type{
-  max-width: 300px;
-  margin: auto;
-}
-
- }
- 
- @media only screen and (min-width: 768px){
-  .texttitle{
+@media only screen and (min-width: 768px) {
+  .texttitle {
     font-size: 20px !important;
     font-weight: 400;
   }
 
-  
-  .whatWePresent p:first-of-type{
+  .whatWePresent p:first-of-type {
     max-width: 300px;
     margin: auto;
   }
-  
-.swiftpt{
-  margin-top: -140px !important;
-  margin-bottom: 0;
-  padding-bottom: 0px;
+
+  .swiftpt {
+    margin-top: -140px !important;
+    margin-bottom: 0;
+    padding-bottom: 0px;
+  }
 }
 
- }
- 
- @media only screen and (min-width: 1024px){
-   .fadingCard .border-bottom{
+@media only screen and (min-width: 1024px) {
+  .fadingCard .border-bottom {
     padding: 0px !important;
     margin: 0px !important;
     padding-bottom: 25px !important;
-   }
-   
-.swiftpt{
-  margin-top: -115px !important;
-}
   }
- 
 
+  .swiftpt {
+    margin-top: -115px !important;
+  }
+}
