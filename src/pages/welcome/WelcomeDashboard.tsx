@@ -1,6 +1,6 @@
 import navLogo6 from "../../assets/welcomeNavLogo.png";
 import banner from "../../assets/welcomeBanner.png";
-import serviceBanner from "../../assets/servicesBanner.png";
+// import serviceBanner from "../../assets/servicesBanner.png";
 import transactionproofBanner from "../../assets/transactionproofBanner.png";
 import Navbar from "./Navbar";
 import breakOut from "../../assets/breakOut.png";
